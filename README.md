@@ -27,6 +27,6 @@ Add the data-proofer-ignore attribute to any tag to ignore it from every check.
 ```html
 <a href="https://notareallink" data-proofer-ignore>Not checked.</a>
 ```
-
-# TEAM
-- Taras Stets
+#team
+Yurii Komaniak
+Taras Stets
