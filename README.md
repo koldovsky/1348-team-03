@@ -32,3 +32,4 @@ Yurii Komaniak
 Taras Stets
 Viacheslav Simkiv
 - Nikita Zemlianskyi
+- Sydor Sofia
