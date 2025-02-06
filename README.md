@@ -30,4 +30,9 @@ Add the data-proofer-ignore attribute to any tag to ignore it from every check.
 #team
 Yurii Komaniak
 Taras Stets
+<<<<<<< HEAD
 Viacheslav Simkiv
+=======
+Viacheslav Simkiv
+- Nikita Zemlianskyi
+>>>>>>> 7eab6b6c453926fd40c2200ae8a9d971eec85083
