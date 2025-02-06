@@ -33,3 +33,4 @@ Taras Stets
 Viacheslav Simkiv
 - Nikita Zemlianskyi
 - Sydor Sofia
+- Mingeresh Vyacheslav
