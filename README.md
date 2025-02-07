@@ -28,6 +28,8 @@ Add the data-proofer-ignore attribute to any tag to ignore it from every check.
 <a href="https://notareallink" data-proofer-ignore>Not checked.</a>
 ```
 #team
+
+
 - Yurii Komaniak
 - Taras Stets
 - Viacheslav Simkiv
@@ -36,3 +38,5 @@ Add the data-proofer-ignore attribute to any tag to ignore it from every check.
 - Mingeresh Vyacheslav
 - Politovskyi Nazar
 - Anzhelika Voropai
+- Raisa Sainidi
+

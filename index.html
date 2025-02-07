@@ -9,8 +9,9 @@
     <script src="https://unpkg.com/htmx.org@1.9.10" integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC" crossorigin="anonymous"></script>
 </head>
 <body>
-<header>
+<header  style="background-image: url('header/index.header.jpg'); width: 70%; height: 500px;  background-size: cover; background-position: center;">
     <nav data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="global.header-nav.partial.html"></nav>
+    <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.hero.partial.html"></section>
 </header>
 <main>
 
@@ -22,7 +23,7 @@
 <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.individual-tour.partial.html"></section>
 <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.info-company-tour.partial.html"></section>
 <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.review.partial.html"></section>
-<section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.blog.partial.html."></section>
+<section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.blog.partial.html"></section>
 
 
 
