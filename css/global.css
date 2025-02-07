@@ -9,7 +9,22 @@
 body {
     background-color: black;
 }
-h1,h2,h3,h4,h5,h6,p,a {
+h1,h2,h3,h4,h5,h6,p {
 
     color: white;
 }
+a {
+    color: rgb(241, 126, 18);
+  }
+  
+a:visited {
+    color: rgb(230, 26, 26);
+  }
+  
+a:hover {
+    color: rgb(231, 200, 20);
+  }
+  
+a:active {
+    color: rgb(241, 201, 20);
+  }
