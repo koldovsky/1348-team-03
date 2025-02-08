@@ -1,0 +1,44 @@
+
+.header__nav {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 10px 20px;
+      }
+  
+  .header__logo {
+    flex-shrink: 0; 
+  }
+  
+  .header__menu {
+    display: flex; 
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+  }
+  
+  .header__menu-item {
+    margin: 0 15px; 
+  }
+  
+  .header__menu-link {
+    text-decoration: none; 
+    color: white;
+    font-weight: bold;
+  }
+  
+  .header__contact {
+    display: flex;
+    align-items: center;
+  }
+  
+  .header__contact-icon {
+    margin-right: 8px; 
+  }
+  
+  .header__contact-link {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+  
