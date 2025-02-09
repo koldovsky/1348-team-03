@@ -1,0 +1,103 @@
+/* Основні стилі секції */
+.blog {
+    text-align: center;
+    padding: 60px 20px;
+    font-family: "Arial", sans-serif;
+  }
+  
+  .blog__title {
+    font-size: 28px;
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 10px;
+  }
+  
+  .blog__description {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 40px;
+  }
+  
+  /* Контейнер для карток */
+  .blog__list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  /* Карточки статей */
+  .blog__item {
+    background: #fff;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    width: 320px;
+  }
+  
+  .blog__item--highlighted {
+    position: relative;
+    width: 340px;
+  }
+  
+  .blog__image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  /* Контент карточки */
+  .blog__content {
+    padding: 20px;
+  }
+  
+  .blog__tag {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: #222;
+  }
+  
+  .blog__tag--tips {
+    color: #ffcc00;
+  }
+  
+  .blog__headline {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .blog__excerpt {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+  }
+  
+  /* Кнопки */
+  .blog__button {
+    display: inline-block;
+    background: red;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+  }
+  
+  .blog__read-more {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    color: red;
+    text-decoration: none;
+  }
+  
+  .blog__read-more:hover {
+    text-decoration: underline;
+  }
+  
