@@ -32,9 +32,12 @@
 
 .gallery {
     padding-top: 60px;
-    padding-left: 32px;
-    padding-right: 32px;
-    margin-top: 65px;
+    padding-bottom: 40px;
+    width: auto;
+    font-optical-sizing: auto;
+    box-sizing: border-box;
+    display: flex;
+
 }
 
 .gallery__image {
