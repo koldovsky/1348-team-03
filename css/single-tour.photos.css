@@ -1,13 +1,40 @@
-.gallery {
+.grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    width: 70%;
     grid-column-gap: 10px;
     grid-row-gap: 10px;
+    grid-template-columns: 30% 30% 33.5%;
+    grid-template-rows: 30% 30%;
+    margin: auto;
+
+}
+
+.masonry__item-wrapper {
+    margin-bottom: 30px;
+    padding-left: 12px;
+    padding-right: 12px;
+
+}
+
+.masonry__item-wrapper-two {
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-bottom: 30px;
+
+}
+
+.masonry__item-wrapper-three {
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-bottom: 30px;
+
+}
+
+.gallery {
     padding-top: 60px;
     padding-left: 32px;
     padding-right: 32px;
-    margin: auto;
-
+    margin-top: 65px;
 }
 
 .gallery__image {

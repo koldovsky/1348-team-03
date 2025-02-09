@@ -4,9 +4,11 @@
 .safari-day-three {
     padding-top: 50px;
     padding-bottom: 60px;
-    padding-left: 32px;
-    padding-right: 32px;
-    margin: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-bottom: 60px;
 }
 
 .safari-day-three__title-highlight {
@@ -27,7 +29,6 @@
     margin-left: 15px;
     margin-right: 15px;
     color: rgb(255, 255, 255);
-    margin: 38px;
 }
 
 .safari-day-three__content {
@@ -47,6 +48,10 @@
 
 .safari-day-three__rules-text {
     margin-left: 10px;
+}
+
+.safari-day-three__rules-list {
+    list-style: none;
 }
 
 .safari-day-three__rules {
