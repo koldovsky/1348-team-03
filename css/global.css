@@ -10,6 +10,8 @@
 
 body {
     background-color: black;
+  max-width:1200px;
+  margin: auto;
 }
 h1,h2,h3,h4,h5,h6,p {
 
@@ -30,3 +32,4 @@ a:hover {
 a:active {
     color: rgb(241, 201, 20);
   }
+
