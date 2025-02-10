@@ -2,19 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Permanent+Marker&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
 
 .safari-day-three {
-    padding-top: 50px;
-    padding-bottom: 60px;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-bottom: 60px;
-    margin-left: 100px;
-    margin-right: 100px;
+    padding: 50px 15px 60px;
+    margin: 0 auto;
+    max-width: 1200px;
 
 }
 
 .safari-day-three__title-highlight {
     font-family: "Permanent Marker", serif;
-    font-style: normal;
     font-size: 37px;
     font-weight: 400;
     color: rgb(247, 199, 2);
@@ -22,7 +17,6 @@
 
 .safari-day-three__title {
     font-family: "Permanent Marker", serif;
-    font-style: normal;
     font-size: 37px;
     font-weight: 400;
     padding-left: 15px;
@@ -38,17 +32,19 @@
 
 .safari-day-three__icon {
     color: rgb(243, 42, 42);
+    width: 20px;
+    height: 20px;
 }
 
 .safari-day-three__rules-item {
     color: rgb(255, 255, 255);
     font-family: "Titillium Web", sans-serif;
     font-size: 17px;
-    margin-bottom: 16px;
+    margin-bottom: 14px;
 }
 
 .safari-day-three__rules-text {
-    margin-left: 10px;
+    margin-left: 8px;
 }
 
 .safari-day-three__rules-list {
@@ -58,6 +54,7 @@
 .safari-day-three__rules {
     margin-top: 20px;
     display: block;
+    width: 550px;
 }
 
 .safari-day-three__text {
