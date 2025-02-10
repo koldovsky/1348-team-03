@@ -6,3 +6,16 @@ header {
     background-repeat: no-repeat;
     background-position: center;
 }
+
+.hero__title {
+
+  font-family: "Permanent Marker", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
+  color: white;
+}
+
+.hero__title-highlight {
+    color: rgb(250, 151, 3);
+}
