@@ -1,0 +1,34 @@
+.adventure__tour-link {
+    color: rgb(f7c702);
+}
+
+.adventure__title-text {
+    color: blue;
+}
+
+.adventure__tour-list {
+    font-family: "Montserrat", serif;
+    color: white;
+}
+
+.adventure {
+    background-image: url(../img/call-form/background-main-cont.jpg);
+    height: 1200px;
+}
+
+.adventure__tour-link
+{
+    color: #f7c702;
+}
+
+.adventure__title-text {
+    color: #fff
+}
+
+.adventure__info-text {
+    color: rgb(255, 255, 255, 0.79)
+}
+
+.adventure__contact-text {
+    color: #fff4ff;
+}
