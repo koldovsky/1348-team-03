@@ -30,6 +30,9 @@
     text-decoration: none; 
     color: white;
     font-weight: bold;
+    font-family: "Titillium Web", serif;
+    font-weight: 200;
+    font-style: normal
   }
   
   .header__contact {
