@@ -1,15 +1,4 @@
-header {
-  background-image: url(../img/header/index.header.jpg);
-  width: 100%;
-  height: 500px;
-  background-size: cover; /* Заповнює весь блок */
-  background-repeat: no-repeat;
-  background-position: center;
-}
-Остаточний виправлений код
-css
-Копіювати
-Редагувати
+
 header {
   background-image: url(../img/header/index.header.jpg);
   width: 100%;
@@ -26,10 +15,10 @@ text-align: center;
 }
 
 .hero__title {
-font-family: "Permanent Marker", cursive;
+font-family: "Permanent Marker", serif;
 font-weight: 400;
 font-style: normal;
-font-size: 40px;
+font-size: 50px;
 color: white;
 text-align: left;
 }
