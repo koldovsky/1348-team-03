@@ -1,7 +1,8 @@
 .gallery {
     padding-top: 60px;
     padding-bottom: 40px;
-    width: auto;
+    /* width: auto; */
+    max-width: 1200px;
     font-optical-sizing: auto;
     box-sizing: border-box;
     justify-content: center;
