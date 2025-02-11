@@ -1,0 +1,12 @@
+.advantages__text{
+    color: rgb(175,175,175);
+    font-size: 17px;
+}
+
+.advantages__icon-wrapper{
+    background-color: rgb(34, 34, 34);
+}
+
+.advantages__line{
+    max-width: 53px;
+}

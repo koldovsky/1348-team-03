@@ -1,0 +1,53 @@
+.national-park {
+    display: flex;
+    align-items: center; /* Вирівнює по вертикалі */
+    justify-content: space-between; /* Розподіляє контент рівномірно */
+    gap: 20px; /* Відступ між текстом і картинкою */
+}
+
+.national-park__content{
+    flex: 1;
+    background-color: #f7c702;
+}
+
+.national-park__title
+{
+    color:#151515;
+    font-family: 'Permanent Marker';
+    font-size:40px;
+}
+
+.national-park__subtitle{
+    color:#151515;
+    font-weight: bold;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 19px;
+}
+
+.national-park__description{
+    color:#464545;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 17px;
+}
+.national-park__time_price_subtitle{
+    color:#151515;
+    font-weight: bold;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 21px;
+}
+
+.national-park__hightlight{
+    color:#f32a2a;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 21px;
+}
+
+.national-park__image {
+    flex-shrink: 0; /* Запобігає зменшенню картинки */
+    width: 40%; /* Ширина зображення (можна змінити) */
+  }
+  
+  .national-park-img {
+    width: 100%; /* Щоб зображення не виходило за межі блоку */
+    height: auto;
+  }
