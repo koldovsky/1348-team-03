@@ -15,8 +15,8 @@
   --subtittle-color: rgb(175, 175, 175);
   --color-accent: #030202;
   --color-background-muted: rgb(34, 34, 34);
-  --yellow:rgb(247, 199, 2);
-  --white: rgb(255, 255, 255);
+  --primary-color:rgb(247, 199, 2);
+  --base-color: rgb(255, 255, 255);
 }
 
 
