@@ -11,6 +11,7 @@
 
 
 :root {
+
     scroll-behavior: smooth;
   --subtitle-color: rgb(175, 175, 175);
   --color-accent: rgb(243, 42, 42);
@@ -18,6 +19,7 @@
   --primary-color:rgb(247, 199, 2);
   --base-color: rgb(255, 255, 255);
   font-family: "Titillium Web", sans-serif;
+>
 }
 
 
