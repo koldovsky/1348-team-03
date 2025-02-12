@@ -1,4 +1,4 @@
-header {
+.about-us__header {
     background-image: url(../img/header/secondary.header.jpg);
     width: 100%;
     min-height: 600px;
@@ -13,14 +13,14 @@ header {
     text-align: left;
     }
 
-    .hero__title {
-        font-family: "Permanent Marker", serif;
-        font-weight: 400;
-        font-style: normal;
-        font-size: 74px;
-        color: var(--primary-color);
-        text-align: left;
-        margin-block-start: 130px;
-        line-height: 1.2;
+.hero__title {
+    font-family: "Permanent Marker", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 74px;
+    color: var(--primary-color);
+    text-align: left;
+    margin-block-start: 130px;
+    line-height: 1.2;
         
-        }
+     }

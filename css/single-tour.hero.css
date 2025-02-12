@@ -6,3 +6,20 @@
     background-repeat: no-repeat;
     background-position: center;
 }
+.hero__content {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+    }
+
+.hero__title {
+    font-family: "Permanent Marker", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 74px;
+    color: var(--primary-color);
+    text-align: left;
+    margin-block-start: 130px;
+    line-height: 1.2;
+        
+     }

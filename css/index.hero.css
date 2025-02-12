@@ -1,5 +1,5 @@
 
-header {
+.index__header {
   background-image: url(../img/header/index.header.jpg);
   width: 100%;
   min-height: 600px;
@@ -11,7 +11,7 @@ header {
 .hero__content {
 max-width: 1200px;
 margin: 0 auto;
-text-align: center;
+text-align: left;
 }
 
 .hero__title {
@@ -38,4 +38,22 @@ line-height: 1.2;
     font-size: 19px;
     margin-top:30px;
     text-align: left;
+}
+
+.hero__btn {
+  display: inline-block;
+  text-align: left;
+  background-color: var(--primary-color);;
+  color: var(--base-color);
+  padding: 12px 24px;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 25px;
+  margin-top: 20px;
+  transition: background 0.3s;
+}
+
+.hero__btn:hover {
+  background-color: var(--base-color);
 }
