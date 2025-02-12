@@ -1,84 +1,101 @@
 .adventure {
-    background-image: url(../img/call-form/background-main-cont.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    min-height: 1200px;
-    width: 100%;
-    .adventure__tour {
+  background-image: url(../img/call-form/background-main-cont.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 1200px;
+  width: 100%;
+  .adventure__tour {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 30px;
+
+    .adventure__tour-list-item {
+      text-align: center;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+
+    .adventure__tour-list,
+    .adventure__tour-links {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      gap: 30px;
+    }
+
+    .adventure__tour-item {
+      font-size: 20px;
+      font-weight: bold;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .adventure__tour-link {
+      font-size: 18px;
+      color: rgb(247, 199, 2);
+      text-decoration: none;
+      text-align: left;
+    }
+  }
+
+  .adventure__title {
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    margin-top: 260px;
+    color: white;
+    .adventure__title-text {
+      display: block;
+      margin-left: 20px;
+      font-family: "Permanent Marker";
+    }
+  }
+
+  .adventure__info {
+    .adventure__info-text {
+      color: rgb(251 214 201);
+      margin-left: 20px;
+      font-size: 19px;
+    }
+  }
+
+  .adventure__icon {
+    margin: 20px;
+        background-color: var(--primary-color);
+        display: inline-block;
+        padding: 10px;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        margin-bottom: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+  }
+
+  .adventure__contact {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    .adventure__contact-text {
+      font-size: 20px;
+      color: white;
       display: flex;
       flex-direction: column;
-      align-items: center;
-      gap: 10px;
-      margin-bottom: 30px;
-  
-      .adventure__tour-list-item {
-        text-align: center;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-      }
-  
-      .adventure__tour-list,
-      .adventure__tour-links {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        display: flex;
-        gap: 30px;
-      }
-  
-      .adventure__tour-item {
-        font-size: 20px;
-        font-weight: bold;
-        display: flex;
-        justify-content: space-between;
-      }
-  
-      .adventure__tour-link {
-        font-size: 18px;
-        color: rgb(247, 199, 2);
-        text-decoration: none;
-        text-align: left;
-      }
+      padding-left: 60px;
     }
-  
-    .adventure__title {
+    .adventure__contact-link {
+      text-decoration: none;
+      text-decoration: underline;
       font-size: 30px;
-      font-weight: bold;
-      text-transform: uppercase;
-      margin-bottom: 20px;
-      margin-top: 260px;
-      color: white;
-      .adventure__title-text {
-        display: block;
-        margin-left: 20px;
-      }
+      color: var(--base-color);
     }
-  
-      .adventure__info {
-  
-          .adventure__info-text {
-              color: rgb(251 214 201);
-              margin-left: 20px;
-              font-size: 19px;
-          }
-      }  
-  
-      .adventure__icon {
-          margin: 20px;
-          background-color: --a;
-          display: inline-block;
-          padding: 10px;
-          border-radius: 50%;
-          margin-bottom: 15px;
-          background-color: var(--primary-color);
-        }
-  
-      .adventure__contact {
-          display: flex;
-          align-items: center;
-          gap: 15px; 
-      }
   }
-  
+}
