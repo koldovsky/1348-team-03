@@ -17,6 +17,7 @@
   --color-background-muted: rgb(34, 34, 34);
   --primary-color:rgb(247, 199, 2);
   --base-color: rgb(255, 255, 255);
+  font-family: "Titillium Web", sans-serif;
 }
 
 
@@ -33,7 +34,12 @@ h5,
 h6,
 p {
 
-  color: white;
+  color: var(--base-color);
+}
+
+h1,
+h2 {
+  font-family: "Permanent Marker";
 }
 
 a {
