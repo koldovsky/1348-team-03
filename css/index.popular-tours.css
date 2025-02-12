@@ -15,6 +15,11 @@
         background-color: var(--base-color);
         margin-top: 45px;
 
+        .popular-tours__card {
+            display: flex;
+            align-items: center;
+        }
+
         .popular-tours__card-tag {
             color: var(--subtitle-color);
             text-transform: uppercase;
@@ -35,10 +40,16 @@
         .popular-tours__card-detail span {
             color: var(--color-accent);
         }
+
+        .popular-tours__card-description {
+            color: var(--subtitle-color);
+            font-size: 17px;
+        }
     }
 
     .popular-tours__list {
-        padding: 0px 15px;
+        padding: 0 15px;
+        margin-top: 55px;
         display: grid;
         text-align: left;
         gap: 40px;
