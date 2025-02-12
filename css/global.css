@@ -57,3 +57,8 @@ a:hover {
 a:active {
   color: var(--base-color);
 }
+
+img {
+  display:block;
+  max-width:100%;
+}
