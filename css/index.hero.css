@@ -18,7 +18,7 @@ text-align: left;
 font-family: "Permanent Marker", serif;
 font-weight: 400;
 font-style: normal;
-font-size: 60px;
+font-size: 70px;
 color: var(--base-color);
 text-align: left;
 margin-block-start: 130px;
@@ -56,4 +56,14 @@ line-height: 1.2;
 
 .hero__btn:hover {
   background-color: var(--base-color);
+}
+@media (max-width: 1000px) {
+  .hero__title {
+        font-size: 50px;
+        }
+}
+@media (max-width: 500px) {
+  .hero__title {
+        font-size: 40px;
+        }
 }
