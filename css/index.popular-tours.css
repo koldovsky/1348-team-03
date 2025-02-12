@@ -1,3 +1,7 @@
+.popular-tours{
+    text-align: center;
+}
+
 .popular-tours__subtitle {
     color: var(--subtittle-color);
 }
@@ -8,4 +12,22 @@
 
 .popular-tours__carousel {
     background-color: #fff;
+}
+
+.popular-tours__list{
+    padding: 0px 15px;
+    display: grid;
+    text-align: left;
+    .popular-tours__item-divider{
+        width: 80%;
+        border-color: var(--subtittle-color);
+    }
+    .popular-tours__item-link{
+        color: var(--primary-color);
+        font-size: 12px;
+    }
+
+    @media (min-width: 770px) {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
 }
