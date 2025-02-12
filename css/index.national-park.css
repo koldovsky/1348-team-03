@@ -1,53 +1,90 @@
 .national-park {
     display: flex;
-    align-items: center; /* Вирівнює по вертикалі */
-    justify-content: space-between; /* Розподіляє контент рівномірно */
-    gap: 20px; /* Відступ між текстом і картинкою */
+    align-items: stretch;
+    justify-content: space-between;
+    height: 100vh;
+  }
+  
+.national-park__content,
+.national-park__image {
+  flex: 1; /* Робимо обидва блоки рівними */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px 30px;
 }
 
-.national-park__content{
-    flex: 1;
+.national-park__content {
     background-color: #f7c702;
 }
-
-.national-park__title
-{
-    color:#151515;
-    font-family: 'Permanent Marker';
-    font-size:40px;
-}
-
-.national-park__subtitle{
-    color:#151515;
+  
+  .national-park__title {
+    color: #151515;
+    font-family: "Permanent Marker", cursive;
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+  
+  .national-park__subtitle {
+    color: #151515;
     font-weight: bold;
-    font-family: 'Titillium Web', sans-serif;
+    font-family: "Titillium Web", sans-serif;
     font-size: 19px;
-}
-
-.national-park__description{
-    color:#464545;
-    font-family: 'Titillium Web', sans-serif;
+    margin-bottom: 15px;
+  }
+  
+  .national-park__description1, .national-park__description2 {
+    color: #464545;
+    font-family: "Titillium Web", sans-serif;
     font-size: 17px;
-}
-.national-park__time_price_subtitle{
-    color:#151515;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  .national-park__time_price_subtitle {
+    color: #151515;
     font-weight: bold;
-    font-family: 'Titillium Web', sans-serif;
+    font-family: "Titillium Web", sans-serif;
     font-size: 21px;
-}
-
-.national-park__hightlight{
-    color:#f32a2a;
-    font-family: 'Titillium Web', sans-serif;
+  }
+  
+  .national-park__hightlight {
+    color: #f32a2a;
+    font-family: "Titillium Web", sans-serif;
     font-size: 21px;
-}
-
-.national-park__image {
-    flex-shrink: 0; /* Запобігає зменшенню картинки */
-    width: 40%; /* Ширина зображення (можна змінити) */
+  }
+  
+  .national-park__button {
+    margin-top: 20px;
+  }
+  
+  .national-park__button button {
+    padding: 12px 25px;
+    background-color: #f32a2a;
+    color: white;
+    font-size: 14px;
+    font-family: "Titillium Web", sans-serif;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .national-park__button button:hover {
+    background-color: #c82323;
+  }
+  
+  .national-park__image {
+    position: relative;
+    overflow: hidden;
   }
   
   .national-park-img {
-    width: 100%; /* Щоб зображення не виходило за межі блоку */
-    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Заповнює весь блок, не спотворюючи зображення */
   }
+  
