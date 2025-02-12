@@ -38,7 +38,7 @@
     font-family: "Titillium Web", sans-serif;
     font-size: 17px;
     line-height: 1.5;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
   }
   
   .national-park__time_price_subtitle {
@@ -64,6 +64,7 @@
     color: white;
     font-size: 14px;
     font-family: "Titillium Web", sans-serif;
+    font-weight:600;
     border: none;
     border-radius: 25px;
     cursor: pointer;
@@ -71,7 +72,7 @@
   }
   
   .national-park__button button:hover {
-    background-color: #c82323;
+    background-color: #151515;
   }
   
   .national-park__image {
