@@ -22,11 +22,12 @@ font-size: 74px;
 color: white;
 text-align: left;
 margin-block-start: 130px;
+line-height: 1.2;
 
 }
 
 .hero__title-highlight {
-  color: rgb(250, 151, 3);
+  color: var(--yellow);
 }
 
 .hero__description {

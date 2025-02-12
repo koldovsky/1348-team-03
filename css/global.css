@@ -9,12 +9,16 @@
   box-sizing: border-box;
 }
 
+
 :root {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
   --subtittle-color: rgb(175, 175, 175);
-  --color-accent: #f32a2a;
+  --color-accent: #030202;
   --color-background-muted: rgb(34, 34, 34);
+  --yellow:rgb(247, 199, 2);
+  --white: rgb(255, 255, 255);
 }
+
 
 body {
   background-color: black;
