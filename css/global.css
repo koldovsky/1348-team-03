@@ -13,7 +13,7 @@
 :root {
     scroll-behavior: smooth;
   --subtittle-color: rgb(175, 175, 175);
-  --color-accent: #030202;
+  --color-accent: rgb(243, 42, 42);
   --color-background-muted: rgb(34, 34, 34);
   --primary-color:rgb(247, 199, 2);
   --base-color: rgb(255, 255, 255);
