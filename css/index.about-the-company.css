@@ -1,0 +1,78 @@
+.company-info__header-title-text {
+    text-align: center;
+    font-family: "Permanent Marker";
+    font-size: 34px;
+    font-weight: 400;
+}
+.company-info__description {
+    text-align: center;
+    font-family: "Titillium Web";
+    font-size: 19px;
+    font-weight: 600;
+    margin-top: 25px;
+}
+.company-info__description-text {
+    font-family: "Titillium Web";
+    font-size: 17px;
+    font-weight: 400;
+}
+.company-info__advantage-text {
+    font-family: "Titillium Web";
+    font-size: 26px;
+    font-weight: 700;
+}
+.company-info__advantage-icon-background {
+    display: flex;
+    background-color: aliceblue;
+    width: 66.8px;
+    height: 66.8px;
+    border-radius: 50%;
+    justify-content: center; 
+    align-items: center;
+}
+.company-info__image-wrapper {
+    display: inline-block;
+    width: 49%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.company-info__advantage-icon-wrapper {
+    display: inline-block;
+    width: 11%;
+}
+
+.company-info__advantage-description {
+    display: inline-block;
+    width: 88%;
+}
+
+.index-company-info {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.company-info__content {
+    margin-top: 50px;
+}
+
+.company-info__image {
+    max-width: 100%;
+}
+
+.company-info__details {
+    display: inline-block;
+    width: 49%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.company-info__advantages {
+    margin-top: 20px;
+}
+
+.company-info__footer {
+    margin-top: 55px;
+    align-items: center;
+}
