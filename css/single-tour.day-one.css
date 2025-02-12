@@ -1,0 +1,19 @@
+.single-tour-day-one {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 24px;
+    padding-right: 24px;
+    max-width: 272px;
+}
+
+.single-tour-day-one__header {
+    font-family: "Permanent Marker", serif;
+    font-size: 34px;
+    color: var(--primary-color);
+    padding-bottom: 50px;
+}
+
+.single-tour-day-one__content {
+    font-family: "Titillium Web", serif;
+    font-size: 17px;
+}
