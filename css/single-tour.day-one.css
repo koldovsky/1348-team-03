@@ -5,11 +5,10 @@
     padding-right: 24px;
     min-width: 272px;
     max-width: 570px;
-    display: flex;
 }
 
 .single-tour-day-one__header {
-    font-size: 34px;
+    font-size: 1.5em;
     color: var(--primary-color);
     padding-bottom: 50px;
 }
@@ -27,4 +26,5 @@
 .single-tour-day-one__info {
     font-family: "Titillium Web", serif;
     font-size: 17px;
+    display: flex;
 }
