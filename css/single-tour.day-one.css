@@ -8,7 +8,7 @@
 }
 
 .single-tour-day-one__header {
-    font-size: clamp(1.5rem, 5vw, 6rem);
+    font-size: clamp(1.5rem, 5vw, 2.125rem);
     color: var(--primary-color);
     padding-bottom: 50px;
 }
@@ -21,16 +21,11 @@
 .single-tour-day-one__image {
     padding-bottom: 60px;
     width: 100%;
+    vertical-align: baseline;
 }
 
 .single-tour-day-one__info {
     font-family: "Titillium Web", sans-serif;
     font-size: 17px;
-}
-
-@media (min-width: 1200px) {
-    .single-tour-day-one__info,
-    .single-tour-day-one__image {
-        transform: translateX(200px);
-    }
+    vertical-align: baseline;
 }
