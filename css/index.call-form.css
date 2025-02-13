@@ -1,5 +1,5 @@
 .adventure {
-  background-image: url(../img/call-form/background-main-cont.jpg);
+  background-image: url(../img/call-form/background-call-form.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -49,11 +49,11 @@
     text-transform: uppercase;
     margin-bottom: 20px;
     margin-top: 260px;
-    color: white;
+    color: var(--base-color);
     .adventure__title-text {
       display: block;
       margin-left: 20px;
-      font-family: "Permanent Marker";
+      font-family: "Permanent Marker", serif;
     }
   }
 
@@ -66,38 +66,85 @@
   }
 
   .adventure__icon {
-        box-sizing: border-box;
-        margin: 20px;
-        background-color: var(--primary-color);
-        display: inline-block;
-        padding: 10px;
-        border-radius: 50%;
-        width: 50px;
-        height: 50px;
-        margin-bottom: 15px;
+    padding-top: 30px;
+    display: flex;
+    padding-left: 20px;
+
+    .adventure__background-icon {
+      background-color: var(--primary-color);
+      border-radius: 100%;
+      height: 50px;
+      width: 50px;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+
+      .adventure__icon-svg {
         display: flex;
         align-items: center;
         justify-content: center;
+      }
+    }
+    .adventure__contact-text {
+      .adventure__contact-text-item {
+        padding-left: 10px;
+        padding-bottom: 20px;
+        color: var(--base-color);
+        font-size: 14px;
+      }
+
+      .adventure__contact-link {
+        color: var(--base-color);
+        display: block;
+        font-size: 28px;
+        font-family: "Permanent Marker", serif;
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .adventure {
+    min-height: 1200px;
+    padding: 100px 40px;
   }
 
-  .adventure__contact {
-    display: flex;
-    align-items: center;
-    gap: 15px;
+  .adventure__title {
+    font-size: 54px;
+  }
 
-    .adventure__contact-text {
-      font-size: 20px;
-      color: white;
-      display: flex;
-      flex-direction: column;
-      padding-left: 120px;
-      padding-bottom: 60px;
-    }
-    .adventure__contact-link {
-      text-decoration: none;
-      text-decoration: underline;
-      font-size: 30px;
-      color: var(--base-color);
-    }
+  .adventure__info-text {
+    font-size: 24px;
+    max-width: 1000px;
+  }
+
+  .adventure__tour {
+    gap: 60px;
+  }
+
+  .adventure__tour-item {
+    font-size: 26px;
+  }
+
+  .adventure__tour-link {
+    font-size: 22px;
+  }
+
+  .adventure__background-icon {
+    height: 70px;
+    width: 70px;
+  }
+
+  .adventure__icon-svg {
+    width: 36px;
+    height: 36px;
+  }
+
+  .adventure__contact-text-item {
+    font-size: 18px;
+  }
+
+  .adventure__contact-link {
+    font-size: 36px;
   }
 }
