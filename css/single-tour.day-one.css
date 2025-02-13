@@ -1,20 +1,20 @@
 .single-tour-day-one {
-    padding-top: 60px;
-    padding-bottom: 60px;
-    padding-left: 24px;
-    padding-right: 24px;
+    padding: 60px 24px;
     min-width: 272px;
     max-width: 570px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
 }
 
 .single-tour-day-one__header {
-    font-size: 1.5em;
+    font-size: clamp(1.5rem, 5vw, 6rem);
     color: var(--primary-color);
     padding-bottom: 50px;
 }
 
 .single-tour-day-one__content {
-    font-family: "Titillium Web", serif;
+    font-family: "Titillium Web", sans-serif;
     font-size: 17px;
 }
 
@@ -24,7 +24,13 @@
 }
 
 .single-tour-day-one__info {
-    font-family: "Titillium Web", serif;
+    font-family: "Titillium Web", sans-serif;
     font-size: 17px;
-    display: flex;
+}
+
+@media (min-width: 770px) {
+    .single-tour-day-one__info,
+    .single-tour-day-one__image {
+        transform: translateX(200px);
+    }
 }
