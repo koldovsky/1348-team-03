@@ -17,3 +17,14 @@
     font-family: "Titillium Web", serif;
     font-size: 17px;
 }
+
+.single-tour-day-one__image {
+    padding-bottom: 60px;
+    width: 100%;
+}
+
+.single-tour-day-one__info {
+    font-family: "Titillium Web", serif;
+    font-size: 17px;
+    display: flex;
+}
