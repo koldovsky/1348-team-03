@@ -46,7 +46,7 @@
 }
 
 .safari-day-three__rules-item {
-    color: rgb(255, 255, 255);
+    color: var(--base-color);
     font-family: "Titillium Web", sans-serif;
     font-size: inherit;
     margin-bottom: 14px;
@@ -67,7 +67,7 @@
 }
 
 .safari-day-three__text {
-    color: rgb(175, 175, 175);
+    color: var(--subtitle-color);
     font-family: "Titillium Web", sans-serif;
     ;
     text-align: left;
