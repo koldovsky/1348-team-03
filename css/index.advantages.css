@@ -5,6 +5,7 @@
     grid-template-columns: 1fr;
     justify-content: center;
     font-family: "Titillium Web", sans-serif;
+    gap:40px;
 
     .advantages__item {
         padding: 0 30px;
@@ -25,7 +26,7 @@
     }
 
     .advantages__text {
-        color: rgb(175, 175, 175);
+        color: var(--subtitle-color);
         font-size: 17px;
     }
 
