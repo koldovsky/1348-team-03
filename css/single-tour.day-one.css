@@ -28,7 +28,7 @@
     font-size: 17px;
 }
 
-@media (min-width: 770px) {
+@media (min-width: 1200px) {
     .single-tour-day-one__info,
     .single-tour-day-one__image {
         transform: translateX(200px);
