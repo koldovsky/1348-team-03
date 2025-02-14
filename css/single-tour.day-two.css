@@ -1,0 +1,74 @@
+/* === Використання глобальних змінних з global.css === */
+:root {
+    --primary-color: rgb(247, 199, 2);
+    --base-color: rgb(255, 255, 255);
+    --color-background-muted: rgb(34, 34, 34);
+    --color-accent: rgb(243, 42, 42);
+    --subtitle-color: rgb(175, 175, 175);
+    --border-radius: 8px;
+    --transition-speed: 0.3s;
+}
+
+/* === Стилі для головного блоку === */
+.day-two-travel__type {
+    color: var(--base-color);
+    padding: 40px;
+}
+
+/* === Заголовок дня === */
+.day-two-travel__title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--base-color); 
+}
+
+/* === Виділення "DAY 2" жовтим кольором === */
+.day-two-travel__title span {
+    color: var(--primary-color);
+}
+
+/* === Опис подорожі === */
+.day-two-trip__description {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/* === Аккордеонний блок === */
+.day-two-accordion {
+    margin-top: 20px;
+}
+
+.day-two-accordion__item {
+    border-bottom: 1px solid var(--subtitle-color);
+    background-color: var(--color-background-muted);
+}
+
+.day-two-accordion__button {
+    width: 100%;
+    background: none;
+    border: none;
+    color: var(--base-color);
+    font-size: 1.2rem;
+    text-align: left;
+    padding: 15px;
+    cursor: pointer;
+    font-family: "Titillium Web", sans-serif;
+}
+
+.day-two-accordion__button:hover {
+    color: var(--primary-color);
+}
+
+/* === Контент аккордеона (прихований за замовчуванням) === */
+.day-two-accordion__content {
+    display: none;
+    padding: 10px 15px;
+    font-size: 1rem;
+    color: var(--base-color);
+}
+
+/* === Показ контенту при відкритті === */
+.day-two-accordion__item.active .day-two-accordion__content {
+    display: block; 
+}

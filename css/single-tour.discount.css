@@ -1,0 +1,41 @@
+.discount__image-container {
+  padding: 60px 24px;
+  background-image: url(../img/tours/biglion.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 272px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+
+  .overlay__early-bird {
+    font-family: Permanent Marker;
+    font-size: clamp(34px, 37px, 40px);
+  }
+
+  .overlay__offer {
+    font-size: 19px;
+    font-family: "Titillium Web", sans-serif;
+  }
+
+  .overlay__rebate {
+    font-family: Permanent Marker;
+    font-size: clamp(56px, 65px, 74px);
+    color: var(--primary-color);
+  }
+
+  .overlay__button {
+    display: inline-block;
+    text-align: left;
+    background-color: var(--color-accent);
+    padding: 5px 15px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background 0.3s;
+    font-size: 14px;
+    font-family: "Titillium Web", sans-serif;
+  }
+}

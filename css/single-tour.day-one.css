@@ -4,29 +4,38 @@
   max-width: 570px;
   display: flex;
   flex-direction: column;
-}
 
-.single-tour-day-one__header {
-  font-size: clamp(1.5rem, 5vw, 2.125rem);
-  color: var(--primary-color);
-  padding-bottom: 50px;
-}
+  .single-tour-day-one__header {
+    font-size: clamp(1.5rem, 5vw, 2.125rem);
+    color: var(--primary-color);
+    padding-bottom: 50px;
+    display: block;
+  }
 
-.single-tour-day-one__description,
-.single-tour-day-one__info {
-  font-family: "Titillium Web", sans-serif;
-  font-size: 17px;
-}
+  .single-tour-day-one__description,
+  .single-tour-day-one__info {
+    font-family: "Titillium Web", sans-serif;
+    font-size: 17px;
 
-.single-tour-day-one__item,
-.single-tour-day-one__gallery-item {
-  padding-bottom: 60px;
-  width: 100%;
-  vertical-align: baseline;
-}
+    @media (min-width: 768px) {
+      display: flex;
+      align-items: center;
+      flex: 1;
+    }
+  }
 
-.single-tour-day-one__gallery-info {
-  font-family: "Titillium Web", sans-serif;
-  font-size: 17px;
-  vertical-align: baseline;
+  .single-tour-day-one__item,
+  .single-tour-day-one__gallery-item {
+    padding-bottom: 60px;
+  }
+
+  .single-tour-day-one__gallery-info {
+    font-family: "Titillium Web", sans-serif;
+    font-size: 17px;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+      justify-content: space-around;
+    }
+  }
 }
