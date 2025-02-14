@@ -10,21 +10,21 @@
 }
 
 /* === Стилі для головного блоку === */
-.travel__type {
+.day-two-travel__type {
     background-color: var(--color-background-muted);
     color: var(--base-color);
     padding: 40px;
 }
 
 /* === Заголовок дня === */
-.travel__title {
+.day-two-travel__title {
     font-size: 2rem;
     font-weight: bold;
     color: var(--primary-color);
 }
 
 /* === Опис подорожі === */
-.trip__description {
+.day-two-trip__description {
     font-size: 1rem;
     line-height: 1.5;
     margin-bottom: 20px;
