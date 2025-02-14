@@ -3,6 +3,7 @@
   background-image: url(../img/tours/biglion.jpg);
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   min-height: 272px;
   display: flex;
   align-items: flex-start;
