@@ -41,8 +41,7 @@
 }
 
 .day-two-accordion__item {
-    background-color: var(--subtitle-color); /* Тепер фон акордеона сірий */
-    border-bottom: 1px solid var(--color-background-muted); /* Контрастний бордер */
+    background-color: var(--subtitle-color);
 }
 
 .day-two-accordion__button {
