@@ -53,6 +53,7 @@
     text-align: left;
     padding: 15px;
     cursor: pointer;
+    font-family: "Titillium Web", sans-serif;
 }
 
 .day-two-accordion__button:hover {
