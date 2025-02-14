@@ -1,5 +1,7 @@
 .popular-tours {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     .popular-tours__title {
         font-size: 40px;
@@ -8,6 +10,7 @@
     .popular-tours__subtitle {
         color: var(--subtitle-color);
         font-size: 19px;
+        margin-top: 25px;
     }
 
 
@@ -18,23 +21,34 @@
         .popular-tours__card {
             display: flex;
             align-items: center;
+
+            .popular-tours__card-info {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: flex-start;
+            }
         }
 
         .popular-tours__card-tag {
             color: var(--subtitle-color);
             text-transform: uppercase;
             font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 2.6px;
         }
 
         .popular-tours__card-name {
             color: black;
             font-size: 32px;
+            font-weight: 700;
         }
 
         .popular-tours__card-details {
             display: flex;
             list-style: none;
             gap: 15px;
+            font-weight: 700;
         }
 
         .popular-tours__card-detail span {
@@ -57,13 +71,15 @@
         .popular-tours__item-divider {
             width: 80%;
             border-color: var(--subtitle-color);
-            margin: 15px 0px;
+            margin: 15px 0;
         }
 
         .popular-tours__item-link {
             color: var(--primary-color);
             font-size: 12px;
             text-transform: uppercase;
+            font-weight: 700;
+            letter-spacing: 2.6px;
         }
 
         @media (min-width: 770px) {
