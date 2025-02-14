@@ -1,0 +1,11 @@
+.adventure-planner {
+    background-color: var(--primary-col);
+}
+
+.plan-your-adventure__text{
+    font-family: 'Permanent Marker', serif;
+}
+
+.adventure-planner__button{
+    background-color: var(--color-accent);
+}
