@@ -20,6 +20,11 @@
 .day-two-travel__title {
     font-size: 2rem;
     font-weight: bold;
+    color: var(--base-color); /* Основний колір тексту */
+}
+
+/* === Виділення "DAY 2" жовтим кольором === */
+.day-two-travel__title span {
     color: var(--primary-color);
 }
 
