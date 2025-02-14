@@ -41,7 +41,7 @@
 }
 
 .day-two-accordion__item {
-    background-color: var(--subtitle-color);
+    border-bottom: 1px solid var(--subtitle-color);
 }
 
 .day-two-accordion__button {
