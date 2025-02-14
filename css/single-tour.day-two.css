@@ -11,7 +11,6 @@
 
 /* === Стилі для головного блоку === */
 .day-two-travel__type {
-    background-color: var(--color-background-muted);
     color: var(--base-color);
     padding: 40px;
 }
