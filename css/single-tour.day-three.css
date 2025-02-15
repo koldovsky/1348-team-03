@@ -4,7 +4,6 @@
 }
 
 .safari-day-three__title {
-    font-family: "Permanent Marker", serif;
     font-size: 2.125rem; /*34px*/
     font-weight: 400;
     text-align: left;
@@ -17,7 +16,6 @@
 }
 
 .safari-day-three__title-highlight {
-    font-family: "Permanent Marker", serif;
     font-size: 2.125rem; /*34px*/
     font-weight: 400;
     color: var(--primary-color);
@@ -36,6 +34,7 @@
     @media (min-width: 600px){
         flex-direction: row;
         justify-content: space-around;
+        flex: 1;
     }
 }
 
