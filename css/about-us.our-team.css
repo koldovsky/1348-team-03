@@ -1,0 +1,31 @@
+.our-team__list{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.team__member {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center;
+  }
+
+.our-team__title{
+    font-family: 'Permanent Marker', serif;
+}
+
+.our-team__name{
+    font-weight: bold;
+}
+
+.our-team__photo{
+    border-width: 10px;
+    border-color: var(--primary-col);
+}
+
+.team__photo img {
+    display: block;
+    width: 150px; 
+    height: auto;
+  }

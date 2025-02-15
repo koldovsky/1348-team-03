@@ -1,76 +1,97 @@
 .animals {
-  color: var(--color-secondary-dark);
+  padding: 20px;
   background-color: var(--color-secondary-dark);
-  padding-left: 20px;
-  padding-right: 20px;
-  min-height: 2720px;
+  min-height: 1400px;
   .animals__title {
     text-align: center;
-    justify-content: center;
     font-family: "Permanent Marker", serif;
     font-size: 34px;
   }
 
   .animals__description {
-    color: var(--subtitle-color);
     text-align: center;
-    justify-content: center;
     font-size: 19px;
-    padding-top: 5px;
+    color: var(--subtitle-color);
   }
 
-  .animals__item {
-    background: white;
-    max-width: 310px;
-    text-align: left;
-    overflow: hidden;
+  .animals__list {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding-top: 10px;
+    gap: 24px;
+    max-width: 900px;
 
-    .animals__image {
-      text-align: left;
-      justify-content: center;
-    }
+    .animals__item {
+      background: var(--base-color);
+      max-width: 312px;
+      padding-bottom: 16px;
 
-    .animal__container {
-      text-align: left;
-      padding: 16px;
+      .animals__image {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 16px;
 
-      .animals__item-title {
-        font-size: 20px;
-        font-weight: bold;
-        color: var(--color-secondary-dark);
+        .animals__item-image {
+          max-width: 100%;
+          height: 300px;
+          object-fit: cover;
+        }
       }
 
-      .animals__item-description {
-        font-size: 16px;
-        color: var(--subtitle-color);
-      }
+      .animals__container {
+        padding: 16px;
+        text-align: left;
 
-      .animals__item-subtitle {
-        font-size: 16px;
-        font-weight: bold;
-        color: var(--color-accent);
-      }
+        .animals__item-title {
+          font-size: 20px;
+          font-weight: bold;
+          color: var(--color-secondary-dark);
+        }
 
-      .animals__item-list {
-        list-style: none;
-        padding: 0;
-        margin-top: 8px;
+        .animals__item-description {
+          font-size: 16px;
+          color: var(--subtitle-color);
+        }
+
+        .animals__item-subtitle {
+          font-size: 16px;
+          font-weight: bold;
+          color: var(--color-accent);
+        }
+
+        .animals__item-list {
+          list-style: none;
+          margin-top: 8px;
+        }
 
         .animals__item-list-item {
           font-size: 16px;
           padding-left: 16px;
           position: relative;
         }
+
+        .animals__item-list-item::before {
+          content: "•";
+          color: var(--color-secondary-dark);
+          font-size: 20px;
+          position: absolute;
+          left: 0;
+          top: 2px;
+          border-radius: 50%;
+        }
       }
     }
+  }
 
-    .animals__item-list-item::before {
-      content: "•";
-      color: var(--primary-color);
-      font-size: 20px;
-      position: absolute;
-      left: 0;
-      top: 2px;
+  @media (min-width: 600px) {
+    .animals__list {
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap;
+      grid-template-columns: repeat(1, 1fr);
     }
   }
 }
+
+ 

@@ -1,30 +1,41 @@
 .single-tour-day-one {
-    padding-top: 60px;
-    padding-bottom: 60px;
-    padding-left: 24px;
-    padding-right: 24px;
-    min-width: 272px;
-    max-width: 570px;
-}
+  padding: 60px 24px;
+  min-width: 272px;
+  max-width: 570px;
+  display: flex;
+  flex-direction: column;
 
-.single-tour-day-one__header {
-    font-size: 34px;
+  .single-tour-day-one__header {
+    font-size: clamp(1.5rem, 5vw, 2.125rem);
     color: var(--primary-color);
     padding-bottom: 50px;
-}
+    display: block;
+  }
 
-.single-tour-day-one__content {
-    font-family: "Titillium Web", serif;
+  .single-tour-day-one__description,
+  .single-tour-day-one__info {
+    font-family: "Titillium Web", sans-serif;
     font-size: 17px;
-}
 
-.single-tour-day-one__image {
+    @media (min-width: 768px) {
+      display: flex;
+      align-items: center;
+      flex: 1;
+    }
+  }
+
+  .single-tour-day-one__item,
+  .single-tour-day-one__gallery-item {
     padding-bottom: 60px;
-    width: 100%;
-}
+  }
 
-.single-tour-day-one__info {
-    font-family: "Titillium Web", serif;
+  .single-tour-day-one__gallery-info {
+    font-family: "Titillium Web", sans-serif;
     font-size: 17px;
-    display: flex;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+      justify-content: space-around;
+    }
+  }
 }
