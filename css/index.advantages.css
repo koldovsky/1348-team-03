@@ -4,8 +4,7 @@
     display: grid;
     grid-template-columns: 1fr;
     justify-content: center;
-    font-family: "Titillium Web", sans-serif;
-    gap:40px;
+    gap: 40px;
 
     .advantages__item {
         padding: 0 30px;
@@ -21,7 +20,7 @@
         justify-content: center;
     }
 
-    .advantages__title{
+    .advantages__title {
         font-size: 22px;
         margin-top: 20px;
     }
@@ -37,11 +36,13 @@
 
     @media (min-width: 480px) {
         grid-template-columns: 1fr 1fr;
+
         .advantages__icon-wrapper {
             width: 70px;
             height: 70px;
         }
-        .advantages__icon{
+
+        .advantages__icon {
             width: 40px;
         }
     }
