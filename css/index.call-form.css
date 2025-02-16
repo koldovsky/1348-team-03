@@ -1,45 +1,38 @@
 .adventure {
   background-image: url(../img/call-form/background-call-form.png);
   background-size: cover;
-  background-position: center;
+  background-position: 50% 35%;
   background-repeat: no-repeat;
-  min-height: 1200px;
-  width: 100%;
+  min-height: 765px;
+  min-width: 320px;
   .adventure__tour {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
     gap: 10px;
     margin-bottom: 30px;
-
-    .adventure__tour-list-item {
-      text-align: center;
+    padding-left: 20px;
+    .adventure__tour-list {
       display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-    }
-
-    .adventure__tour-list,
-    .adventure__tour-links {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      display: flex;
-      gap: 30px;
-    }
-
-    .adventure__tour-item {
-      font-size: 20px;
-      font-weight: bold;
-      display: flex;
-      justify-content: space-between;
-    }
-
-    .adventure__tour-link {
-      font-size: 18px;
-      color: rgb(247, 199, 2);
-      text-decoration: none;
+      flex-direction: column;
+      align-items: left;
       text-align: left;
+      gap: 15px;
+      .adventure__tour-item {
+        font-family: "Titillium Web", sans-serif;
+        color: var(--base-color);
+        font-size: 20px;
+        font-weight: bold;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+
+        .adventure__tour-link {
+          font-size: 18px;
+          color: var(--primary-color);
+        }
+      }
     }
   }
 
@@ -48,7 +41,7 @@
     font-weight: bold;
     text-transform: uppercase;
     margin-bottom: 20px;
-    margin-top: 260px;
+    margin-top: 70px;
     color: var(--base-color);
     .adventure__title-text {
       display: block;
@@ -66,10 +59,9 @@
   }
 
   .adventure__icon {
-    padding-top: 30px;
     display: flex;
+    padding-top: 125px;
     padding-left: 20px;
-
     .adventure__background-icon {
       background-color: var(--primary-color);
       border-radius: 100%;
@@ -105,46 +97,47 @@
 
 @media (min-width: 1200px) {
   .adventure {
-    min-height: 1200px;
-    padding: 100px 40px;
-  }
+    min-height: 765px;
+    padding: 10px 80px;
+    background-position: 66% 50%;
+    .adventure__title {
+      font-size: 40px;
+      padding-top: 90px;
+      .adventure__title-text {
+      }
+    }
+    .adventure__info {
+      .adventure__info-text {
+        font-size: 19px;
+        max-width: 1000px;
+      }
+    }
+    .adventure__icon {
+      margin-top: -50px;
+      .adventure__background-icon {
+        background-color: var(--primary-color);
+        border-radius: 100%;
+        height: 50px;
+        width: 50px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
 
-  .adventure__title {
-    font-size: 54px;
-  }
+        .adventure__icon-svg {
+          width: 36px;
+          height: 36px;
+        }
+      }
 
-  .adventure__info-text {
-    font-size: 24px;
-    max-width: 1000px;
-  }
+      .adventure__contact-text {
+        .adventure__contact-text-item {
+          font-size: 18px;
+        }
 
-  .adventure__tour {
-    gap: 60px;
-  }
-
-  .adventure__tour-item {
-    font-size: 26px;
-  }
-
-  .adventure__tour-link {
-    font-size: 22px;
-  }
-
-  .adventure__background-icon {
-    height: 70px;
-    width: 70px;
-  }
-
-  .adventure__icon-svg {
-    width: 36px;
-    height: 36px;
-  }
-
-  .adventure__contact-text-item {
-    font-size: 18px;
-  }
-
-  .adventure__contact-link {
-    font-size: 36px;
+        .adventure__contact-link {
+          font-size: 36px;
+        }
+      }
+    }
   }
 }
