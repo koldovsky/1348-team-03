@@ -14,17 +14,23 @@
   .overlay__early-bird {
     font-family: Permanent Marker;
     font-size: clamp(34px, 37px, 40px);
+    padding-left: 35px;
+    padding-bottom: 15px;
   }
 
   .overlay__offer {
     font-size: 19px;
     font-family: "Titillium Web", sans-serif;
+    padding-left: 35px;
+    padding-bottom: 15px;
   }
 
   .overlay__rebate {
     font-family: Permanent Marker;
     font-size: clamp(56px, 65px, 74px);
     color: var(--primary-color);
+    padding-left: 35px;
+    padding-bottom: 15px;
   }
 
   .overlay__button {
