@@ -2,13 +2,14 @@
   padding: 60px 24px;
   background-image: url(../img/tours/biglion.jpg);
   background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  min-height: 272px;
+  background-position: 20% 50%;
+  min-height: 606px;
   display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
+  background-clip: content-box;
+  justify-content: space-around;
 
   .overlay__early-bird {
     font-family: Permanent Marker;
