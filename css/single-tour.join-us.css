@@ -1,0 +1,47 @@
+.trip {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.trip > .trip {
+max-width: 600px;
+}
+.trip__title {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.trip svg {
+    display: block;
+    margin-top: 10px;
+}
+.trip__description,
+.trip__info {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-top: 20px;
+}
+.trip__details {
+    background-color: var(--color-background-muted);
+    padding: 20px 30px;
+    border-radius: 8px;
+    max-width: 300px;
+}
+.trip__details p {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--subtitle-color);
+    padding: 10px 0;
+}
+.trip__details p:last-child {
+    border-bottom: none;
+}
+.trip__details strong {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    text-transform: uppercase;
+}
