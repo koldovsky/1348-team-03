@@ -1,10 +1,10 @@
 .trip {
     display: flex;
-    justify-content: space-between; /* Розподіляє контент між двома блоками */
+    justify-content: space-between; /* Вирівнює текст ліворуч, а блок з цінами праворуч */
     align-items: flex-start; /* Вирівнює елементи зверху */
     flex-wrap: nowrap; /* Запобігає перенесенню блоків на новий рядок */
     max-width: 1200px;
-    margin: 0 auto; /* Центрує блок */
+    margin: 0 auto;
     padding: 60px;
     gap: 50px; /* Відступ між блоками */
 }
@@ -32,10 +32,11 @@
 }
 
 .trip__details {
-    flex: 0 0 300px; /* Фіксована ширина блоку з цінами */
+    flex: 0 0 300px; /* Фіксуємо ширину блоку з цінами */
     background-color: var(--color-background-muted);
     padding: 20px 30px;
     border-radius: 8px;
+    align-self: flex-start; /* Фіксує блок з цінами зверху */
 }
 
 .trip__details p {
