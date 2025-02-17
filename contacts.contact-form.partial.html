@@ -3,32 +3,56 @@
   <div class="contacts__header">
     <h2 class="contacts__title">CONTACTS</h2>
   </div>
-  
+
   <div class="contacts__content">
     <div class="contacts__map">
-      <iframe 
-        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d5905.027347528512!2d30.509288907829866!3d50.46860920378969!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1suk!2sua!4v1739196690824!5m2!1suk!2sua" 
-        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d5905.027347528512!2d30.509288907829866!3d50.46860920378969!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1suk!2sua!4v1739196690824!5m2!1suk!2sua"
+        width="600"
+        height="450"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      >
       </iframe>
     </div>
-    
+
     <div class="contacts__form">
       <form class="form" action="#" method="POST">
         <h2 class="form__title">LET'S GO!</h2>
         <p class="form__subtitle">Fill out the form to leave a request.</p>
-      
+
         <label class="form__label">
-          <input class="form__input" type="text" name="name" placeholder="Your Name*" required>
+          <input
+            class="form__input"
+            type="text"
+            name="name"
+            placeholder="Your Name*"
+            required
+          />
         </label>
-      
+
         <label class="form__label">
-          <input class="form__input" type="tel" name="phone" placeholder="Phone number*" required>
+          <input
+            class="form__input"
+            type="tel"
+            name="phone"
+            placeholder="Phone number*"
+            required
+          />
         </label>
-      
+
         <label class="form__label">
-          <input class="form__input" type="email" name="email" placeholder="Email*" required>
+          <input
+            class="form__input"
+            type="email"
+            name="email"
+            placeholder="Email*"
+            required
+          />
         </label>
-      
+
         <label class="form__label">
           <select class="form__select" name="tour" required>
             <option value="" disabled selected>Tour</option>
@@ -37,7 +61,7 @@
             <option value="beach">Beach</option>
           </select>
         </label>
-      
+
         <button class="form__button" type="submit">Send</button>
       </form>
     </div>
