@@ -1,36 +1,44 @@
 .trip {
     display: flex;
-    justify-content: space-between; /* Рівномірний розподіл контенту */
-    align-items: center;
-    flex-wrap: wrap; /* Дозволяє переносити блоки, якщо не поміщаються */
+    justify-content: space-between; /* Рівномірний розподіл між текстом і цінами */
+    align-items: flex-start; /* Вирівнюємо зверху */
+    flex-wrap: nowrap; /* Запобігає перенесенню блоків */
     max-width: 1200px;
     margin: 0 auto; /* Центрує блок */
     padding: 60px;
+    gap: 50px; /* Додає відступ між двома блоками */
 }
-.trip > div {
-    flex: 1; /* Додає рівномірний розподіл простору */
-    min-width: 300px; /* Запобігає надто вузькому контейнеру */
+
+.trip__content {
+    width: 60%;
+    max-width: 700px; /* Додаємо обмеження, щоб текст не розтягувався */
 }
+
 .trip__title {
     font-size: 2.5rem;
     font-weight: bold;
 }
+
 .trip svg {
     display: block;
     margin-top: 10px;
 }
+
 .trip__description,
 .trip__info {
     font-size: 1.1rem;
     line-height: 1.6;
     margin-top: 20px;
 }
+
 .trip__details {
     width: 35%;
+    max-width: 300px; /* Щоб блок не був надто великим */
     background-color: var(--color-background-muted);
     padding: 20px 30px;
     border-radius: 8px;
 }
+
 .trip__details p {
     display: flex;
     justify-content: space-between;
@@ -38,15 +46,14 @@
     border-bottom: 1px solid var(--subtitle-color);
     padding: 10px 0;
 }
+
 .trip__details p:last-child {
     border-bottom: none;
 }
+
 .trip__details strong {
     font-weight: bold;
     font-size: 1.2rem;
     color: var(--primary-color);
     text-transform: uppercase;
-}
-.trip__content {
-    width: 60%;
 }
