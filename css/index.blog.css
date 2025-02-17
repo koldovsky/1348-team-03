@@ -2,19 +2,19 @@
 .blog {
   text-align: center;
   padding: 60px 20px;
-  font-family: "Arial", sans-serif;
+  background-color: #fff ;
+  font-family: "Titillium Web", sans-serif;
 }
 
 .blog__title {
-  font-size: 28px;
-  font-weight: bold;
-  font-style: italic;
+  font-size: 34px;
+  color: var(--color-secondary-dark);
   margin-bottom: 10px;
 }
 
 .blog__description {
-  font-size: 16px;
-  color: #666;
+  font-size: 19px;
+  color: #4C4C4C;
   margin-bottom: 40px;
 }
 
@@ -25,9 +25,7 @@
   flex-wrap: wrap;
 }
 
-/* Карточки статей */
 .blog__item {
-  background: #fff;
   overflow: hidden;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -36,7 +34,6 @@
 }
 
 .blog__item--highlighted {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
   position: relative;
   width: 340px;
 }
@@ -76,11 +73,10 @@
   margin-bottom: 15px;
 }
 
-/* Кнопки */
 .blog__button {
   display: inline-block;
   background: red;
-  color: #fff;
+  color: #f32f2a;
   font-size: 14px;
   font-weight: bold;
   padding: 10px 20px;
@@ -92,8 +88,8 @@
   display: inline-block;
   font-size: 14px;
   font-weight: bold;
-  color: red;
-  text-decoration: none;
+  color: #f32f2a;
+  text-decoration: underline;
 }
 
 .blog__read-more:hover {
