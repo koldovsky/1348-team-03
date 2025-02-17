@@ -2,7 +2,6 @@
     display: flex;
     justify-content: space-between; /* Вирівнює текст ліворуч, а блок з цінами праворуч */
     align-items: flex-start; /* Вирівнює елементи зверху */
-    flex-wrap: nowrap; /* Запобігає перенесенню блоків на новий рядок */
     max-width: 1200px;
     margin: 0 auto;
     padding: 60px;
@@ -12,22 +11,25 @@
 .trip__content {
     flex: 1; /* Дозволяє займати доступний простір */
     max-width: 600px; /* Обмежує ширину текстового блоку */
+    margin-left: -50px;
 }
 
 .trip__title {
-    font-size: 2.5rem;
+    font-size: 37px;
     font-weight: bold;
+    max-width: 500px;
 }
 
 .trip svg {
     display: block;
     margin-top: 10px;
+    margin-bottom: 0px;
 }
 
 .trip__description,
 .trip__info {
-    font-size: 1.1rem;
-    line-height: 1.6;
+    font-size: 17px;
+    line-height: 1.4;
     margin-top: 20px;
 }
 
