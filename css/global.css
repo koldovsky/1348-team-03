@@ -12,14 +12,14 @@
 
 :root {
   scroll-behavior: smooth;
---subtitle-color: rgb(175, 175, 175);
---color-accent: rgb(243, 42, 42);
---color-background-main: rgb(0, 0, 0);
---color-background-muted: rgb(34, 34, 34);
---color-secondary-dark: #151515;
---primary-color:rgb(247, 199, 2);
---secondary-button-color: #e6b800;
---base-color: rgb(255, 255, 255);
+  --subtitle-color: rgb(175, 175, 175);
+  --color-accent: rgb(243, 42, 42);
+  --color-background-main: rgb(0, 0, 0);
+  --color-background-muted: rgb(34, 34, 34);
+  --color-secondary-dark: #151515;
+  --primary-color: rgb(247, 199, 2);
+  --secondary-button-color: #e6b800;
+  --base-color: rgb(255, 255, 255);
   font-family: "Titillium Web", sans-serif;
 }
 
@@ -46,7 +46,7 @@ h2 {
 }
 
 a {
-  color:var(--base-color);
+  color: var(--base-color);
 }
 
 a:visited {
@@ -62,6 +62,6 @@ a:active {
 }
 
 img {
-  display:block;
-  max-width:100%;
+  display: block;
+  max-width: 100%;
 }
