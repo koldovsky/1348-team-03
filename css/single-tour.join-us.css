@@ -1,17 +1,17 @@
 .trip {
     display: flex;
-    justify-content: space-between; /* Рівномірний розподіл між текстом і цінами */
-    align-items: flex-start; /* Вирівнюємо зверху */
-    flex-wrap: nowrap; /* Запобігає перенесенню блоків */
+    justify-content: space-between; /* Розподіляє контент між двома блоками */
+    align-items: flex-start; /* Вирівнює елементи зверху */
+    flex-wrap: nowrap; /* Запобігає перенесенню блоків на новий рядок */
     max-width: 1200px;
     margin: 0 auto; /* Центрує блок */
     padding: 60px;
-    gap: 50px; /* Додає відступ між двома блоками */
+    gap: 50px; /* Відступ між блоками */
 }
 
 .trip__content {
-    width: 60%;
-    max-width: 700px; /* Додаємо обмеження, щоб текст не розтягувався */
+    flex: 1; /* Дозволяє займати доступний простір */
+    max-width: 600px; /* Обмежує ширину текстового блоку */
 }
 
 .trip__title {
@@ -32,8 +32,7 @@
 }
 
 .trip__details {
-    width: 35%;
-    max-width: 300px; /* Щоб блок не був надто великим */
+    flex: 0 0 300px; /* Фіксована ширина блоку з цінами */
     background-color: var(--color-background-muted);
     padding: 20px 30px;
     border-radius: 8px;
