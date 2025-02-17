@@ -1,13 +1,15 @@
 .trip {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* Рівномірний розподіл контенту */
     align-items: center;
-    padding: 60px;
+    flex-wrap: wrap; /* Дозволяє переносити блоки, якщо не поміщаються */
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 0 auto; /* Центрує блок */
+    padding: 60px;
 }
-.trip > .trip {
-max-width: 600px;
+.trip > div {
+    flex: 1; /* Додає рівномірний розподіл простору */
+    min-width: 300px; /* Запобігає надто вузькому контейнеру */
 }
 .trip__title {
     font-size: 2.5rem;
