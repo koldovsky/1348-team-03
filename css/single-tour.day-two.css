@@ -19,7 +19,7 @@
 .day-two-travel__title {
     font-size: 2rem;
     font-weight: bold;
-    color: var(--base-color); 
+    color: var(--base-color);
 }
 
 /* === Виділення "DAY 2" жовтим кольором === */
@@ -70,5 +70,5 @@
 
 /* === Показ контенту при відкритті === */
 .day-two-accordion__item.active .day-two-accordion__content {
-    display: block; 
+    display: block;
 }

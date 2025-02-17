@@ -7,11 +7,12 @@
 
 .national-park__content,
 .national-park__image {
-flex: 1; /* Робимо обидва блоки рівними */
-display: flex;
-flex-direction: column;
-justify-content: center;
-padding: 40px 30px;
+  flex: 1;
+  /* Робимо обидва блоки рівними */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px 30px;
 }
 
 .national-park__content {
@@ -33,7 +34,8 @@ padding: 40px 30px;
   margin-bottom: 15px;
 }
 
-.national-park__description1, .national-park__description2 {
+.national-park__description1,
+.national-park__description2 {
   color: #464545;
   font-family: "Titillium Web", sans-serif;
   font-size: 17px;
@@ -64,7 +66,7 @@ padding: 40px 30px;
   color: white;
   font-size: 14px;
   font-family: "Titillium Web", sans-serif;
-  font-weight:600;
+  font-weight: 600;
   border: none;
   border-radius: 25px;
   cursor: pointer;
@@ -86,46 +88,51 @@ padding: 40px 30px;
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Заповнює весь блок, не спотворюючи зображення */
+  object-fit: cover;
+  /* Заповнює весь блок, не спотворюючи зображення */
 }
 
 /* --- Адаптація для мобільних пристроїв --- */
 @media (max-width: 768px) {
   .national-park {
-      flex-direction: column; /* Міняємо на вертикальне розташування */
-      align-items: center;
+    flex-direction: column;
+    /* Міняємо на вертикальне розташування */
+    align-items: center;
   }
 
-  .national-park__content, 
+  .national-park__content,
   .national-park__image {
-      max-width: 100%;
-      padding: 30px 20px;
+    max-width: 100%;
+    padding: 30px 20px;
   }
 
   .national-park-img {
-      width: 100%; /* Заповнює ширину, але зберігає пропорції */
-      height: auto;
-      max-height: none; /* Прибираємо обмеження на висоту */
-      position: absolute;
+    width: 100%;
+    /* Заповнює ширину, але зберігає пропорції */
+    height: auto;
+    max-height: none;
+    /* Прибираємо обмеження на висоту */
+    position: absolute;
   }
+
   .national-park__content {
-      padding: 20px 15px;
+    padding: 20px 15px;
   }
 
   .national-park__title {
-      font-size: 28px;
+    font-size: 28px;
   }
 
   .national-park__subtitle {
-      font-size: 16px;
+    font-size: 16px;
   }
 
-  .national-park__description1, 
+  .national-park__description1,
   .national-park__description2 {
-      font-size: 15px;
+    font-size: 15px;
   }
 
   .national-park__button button {
-      width: 100%;
+    width: 100%;
   }
 }
