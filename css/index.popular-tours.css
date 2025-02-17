@@ -16,7 +16,6 @@
 
     .popular-tours__carousel {
         position: relative;
-        background-color: var(--base-color);
         margin-top: 45px;
         display: flex;
         flex-direction: row;
@@ -55,13 +54,14 @@
         }
 
         .popular-tours__card {
+            background-color: var(--base-color);
             display: flex;
-            align-items: center;
             flex-direction: column;
 
-            .popular-tours__card-image {
-                max-height: 100%;
-                object-fit: scale-down;
+
+            .popular-tours__card-image img {
+                height: 100%;
+                object-fit: cover;
             }
 
             .popular-tours__card-info {
@@ -95,6 +95,7 @@
 
                     .popular-tours__card-detail span {
                         color: var(--color-accent);
+                        margin-right: 10px;
                     }
                 }
 
