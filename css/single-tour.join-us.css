@@ -2,7 +2,6 @@
     display: flex;
     justify-content: space-between; /* Вирівнює текст ліворуч, а блок з цінами праворуч */
     align-items: flex-start; /* Вирівнює елементи зверху */
-    flex-wrap: nowrap; /* Запобігає перенесенню блоків на новий рядок */
     max-width: 1200px;
     margin: 0 auto;
     padding: 60px;
