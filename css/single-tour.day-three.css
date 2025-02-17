@@ -1,6 +1,6 @@
 .safari-day-three {
     padding: 50px 24px 60px;
-    max-width: auto;
+    margin: auto;
 }
 
 .safari-day-three__title {
@@ -72,7 +72,6 @@
 .safari-day-three__text {
     color: var(--subtitle-color);
     font-family: "Titillium Web", sans-serif;
-    ;
     font-size: inherit;
     text-align: left;
     max-width: auto;
