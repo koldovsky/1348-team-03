@@ -1,4 +1,4 @@
-.contacts__header {
+.header--contacts {
     background-image: url(../img/header/secondary.header.jpg);
     width: 100%;
     min-height: 600px;
@@ -11,7 +11,7 @@
     max-width: 1200px;
     margin: 0 auto;
     text-align: left;
-    }
+}
 
 .hero__title {
     font-family: "Permanent Marker", serif;
@@ -22,5 +22,5 @@
     text-align: left;
     margin-block-start: 130px;
     line-height: 1.2;
-        
-     }
+
+}

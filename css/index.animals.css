@@ -2,6 +2,7 @@
   padding: 20px;
   background-color: var(--color-secondary-dark);
   min-height: 1400px;
+
   .animals__title {
     text-align: center;
     font-family: "Permanent Marker", serif;

@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -15,10 +15,10 @@
       integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="css/about-us.css">
+    <link rel="stylesheet" href="css/about-us.css" />
   </head>
   <body>
-    <header class="about-us__header">
+    <header class="header header--about-us">
       <nav
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
@@ -31,6 +31,7 @@
       ></section>
     </header>
     <main>
+      <div class="container">
       <section
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
@@ -61,7 +62,11 @@
         data-hx-swap="outerHTML"
         data-hx-get="about-us.our-team.partial.html"
       ></section>
+    </div>
     </main>
+    </div>
+    <div class="container">
     <footer></footer>
+  </div>
   </body>
 </html>
