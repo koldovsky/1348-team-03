@@ -4,7 +4,7 @@
     display: grid;
     grid-template-columns: 1fr;
     justify-content: center;
-    gap: 40px;
+    gap: 60px;
 
     .advantages__item {
         padding: 0 30px;
@@ -49,5 +49,6 @@
 
     @media (min-width: 1020px) {
         grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 0;
     }
 }
