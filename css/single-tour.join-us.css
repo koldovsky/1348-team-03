@@ -1,0 +1,61 @@
+.trip {
+    display: flex;
+    justify-content: space-between; /* Вирівнює текст ліворуч, а блок з цінами праворуч */
+    align-items: flex-start; /* Вирівнює елементи зверху */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px;
+    gap: 50px; /* Відступ між блоками */
+}
+
+.trip__content {
+    flex: 1; /* Дозволяє займати доступний простір */
+    max-width: 600px; /* Обмежує ширину текстового блоку */
+    margin-left: -50px;
+}
+
+.trip__title {
+    font-size: 37px;
+    font-weight: bold;
+    max-width: 500px;
+}
+
+.trip svg {
+    display: block;
+    margin-top: -3px;
+    margin-bottom: -10px;
+}
+
+.trip__description,
+.trip__info {
+    font-size: 17px;
+    line-height: 1.4;
+    margin-top: 20px;
+}
+
+.trip__details {
+    flex: 0 0 300px; /* Фіксуємо ширину блоку з цінами */
+    background-color: var(--color-background-muted);
+    padding: 20px 30px;
+    border-radius: 8px;
+    align-self: flex-start; /* Фіксує блок з цінами зверху */
+}
+
+.trip__details p {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--subtitle-color);
+    padding: 10px 0;
+}
+
+.trip__details p:last-child {
+    border-bottom: none;
+}
+
+.trip__details strong {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    text-transform: uppercase;
+}

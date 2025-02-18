@@ -1,21 +1,25 @@
 .national-park {
-  display: flex;
-  align-items: stretch;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   height: 100vh;
-}
-
-.national-park__content,
-.national-park__image {
-flex: 1; /* Робимо обидва блоки рівними */
-display: flex;
-flex-direction: column;
-justify-content: center;
-padding: 40px 30px;
 }
 
 .national-park__content {
   background-color: #f7c702;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 30px;
+}
+
+.national-park__image {
+  display: flex;
+  overflow: hidden;
+}
+
+.national-park-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .national-park__title {
@@ -26,14 +30,15 @@ padding: 40px 30px;
 }
 
 .national-park__subtitle {
-  color: #151515;
+  color: var(--color-secondary-dark);
   font-weight: bold;
   font-family: "Titillium Web", sans-serif;
   font-size: 19px;
   margin-bottom: 15px;
 }
 
-.national-park__description1, .national-park__description2 {
+.national-park__description1,
+.national-park__description2 {
   color: #464545;
   font-family: "Titillium Web", sans-serif;
   font-size: 17px;
@@ -42,7 +47,7 @@ padding: 40px 30px;
 }
 
 .national-park__time_price_subtitle {
-  color: #151515;
+  color: var(--color-secondary-dark);
   font-weight: bold;
   font-family: "Titillium Web", sans-serif;
   font-size: 21px;
@@ -64,7 +69,7 @@ padding: 40px 30px;
   color: white;
   font-size: 14px;
   font-family: "Titillium Web", sans-serif;
-  font-weight:600;
+  font-weight: 600;
   border: none;
   border-radius: 25px;
   cursor: pointer;
@@ -72,60 +77,40 @@ padding: 40px 30px;
 }
 
 .national-park__button button:hover {
-  background-color: #151515;
+  background-color: var(--color-secondary-dark);
 }
 
-.national-park__image {
-  position: relative;
-  overflow: hidden;
-}
-
-.national-park-img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Заповнює весь блок, не спотворюючи зображення */
-}
-
-/* --- Адаптація для мобільних пристроїв --- */
 @media (max-width: 768px) {
   .national-park {
-      flex-direction: column; /* Міняємо на вертикальне розташування */
-      align-items: center;
-  }
-
-  .national-park__content, 
-  .national-park__image {
-      max-width: 100%;
-      padding: 30px 20px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    height: auto;
   }
 
   .national-park-img {
-      width: 100%; /* Заповнює ширину, але зберігає пропорції */
-      height: auto;
-      max-height: none; /* Прибираємо обмеження на висоту */
-      position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
   }
+
   .national-park__content {
-      padding: 20px 15px;
+    padding: 20px 15px;
   }
 
   .national-park__title {
-      font-size: 28px;
+    font-size: 28px;
   }
 
   .national-park__subtitle {
-      font-size: 16px;
+    font-size: 16px;
   }
 
-  .national-park__description1, 
+  .national-park__description1,
   .national-park__description2 {
-      font-size: 15px;
+    font-size: 15px;
   }
 
   .national-park__button button {
-      width: 100%;
+    width: 100%;
   }
 }

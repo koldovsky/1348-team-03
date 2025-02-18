@@ -1,64 +1,63 @@
-.contacts__content{
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    background-color: var(--color-background-muted);
-    
+.contacts__content {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background-color: var(--color-background-muted);
+
 }
 
-.contacts__form{
-    padding: 40px;
-    max-width: 400px;
-    text-align: center;
+.contacts__form {
+  padding: 40px;
+  max-width: 400px;
+  text-align: center;
 }
 
-.form__title{
-    font-size: 28px;
-    font-weight: bold;
-    font-family: 'Permanent Marker', serif;
-    color: var(--base-color);
-    margin-bottom: 10px;
+.form__title {
+  font-size: 28px;
+  font-weight: bold;
+  font-family: 'Permanent Marker', serif;
+  color: var(--base-color);
+  margin-bottom: 10px;
 }
 
 .form__subtitle {
-    font-size: 16px;
-    color: var(--base-color);
-    margin-bottom: 20px;
-  }
-  
-  .form__input,
-  .form__select {
-    width: 100%;
-    padding: 14px;
-    font-size: 16px;
-    border: none;
-    border-radius: 30px; 
-    background-color: var(--color-background-main);
-    color: var(--base-color);
-    margin-bottom: 15px;
-    outline: none;
-  }
-  
-  .form__select {
-    appearance: none;
-    cursor: pointer;
-  }
-  
-  .form__button {
-    width: 100%;
-    padding: 14px;
-    font-size: 18px;
-    font-weight: bold;
-    text-transform: uppercase;
-    border: none;
-    border-radius: 30px;
-    background-color: var(--primary-color);
-    color: var(--base-color);
-    cursor: pointer;
-    transition: background 0.3s ease;
-  }
-  
-  .form__button:hover {
-    background-color: --secondary-button-color:
-  }
+  font-size: 16px;
+  color: var(--base-color);
+  margin-bottom: 20px;
+}
 
+.form__input,
+.form__select {
+  width: 100%;
+  padding: 14px;
+  font-size: 16px;
+  border: none;
+  border-radius: 30px;
+  background-color: var(--color-background-main);
+  color: var(--base-color);
+  margin-bottom: 15px;
+  outline: none;
+}
+
+.form__select {
+  appearance: none;
+  cursor: pointer;
+}
+
+.form__button {
+  width: 100%;
+  padding: 14px;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 30px;
+  background-color: var(--primary-color);
+  color: var(--base-color);
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.form__button:hover {
+  background-color: var(--secondary-button-color);
+}

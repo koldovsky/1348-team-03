@@ -1,24 +1,20 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Safari</title>
-    <link
-      rel="shortcut icon"
-      href="https://placekitten.com/96/139"
-      type="image/x-icon"
-    />
+    <link rel="icon" href="img/header/leo-golo.png" type="image/x-icon">
     <script
       src="https://unpkg.com/htmx.org@1.9.10"
       integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="css/single-tour.css">
+    <link rel="stylesheet" href="css/single-tour.css" />
   </head>
   <body>
-    <header class="single-tour__header">
+    <header class="header header--single-tour">
       <nav
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
@@ -31,6 +27,7 @@
       ></section>
     </header>
     <main>
+      <div class="container">
       <section
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
@@ -61,6 +58,7 @@
         data-hx-swap="outerHTML"
         data-hx-get="single-tour.day-three.partial.html"
       ></section>
+      </div>
     </main>
     <footer></footer>
   </body>

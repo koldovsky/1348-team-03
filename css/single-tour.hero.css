@@ -1,16 +1,17 @@
-.single-tour__header {
+.header--single-tour {
     background-image: url(../img/header/single-tour.header.jpg);
     width: 100%;
     min-height: 600px;
-    background-size: cover; 
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
+
 .hero__content {
     max-width: 1200px;
     margin: 0 auto;
     text-align: left;
-    }
+}
 
 .hero__title {
     font-family: "Permanent Marker", serif;
@@ -21,5 +22,5 @@
     text-align: left;
     margin-block-start: 130px;
     line-height: 1.2;
-        
-     }
+
+}
