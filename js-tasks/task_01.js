@@ -16,3 +16,6 @@ function stringToArray(string){
 function stringToArray(string) {
 	return string.split(' ');
 }
+
+/*-------- Viacheslav Simkiv---------*/
+const stringToArray = (string) => string.split(" ");
