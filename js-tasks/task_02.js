@@ -1,12 +1,9 @@
-/*------Make negative------*/
+https://www.codewars.com/kata/dna-to-rna-conversion/train/javascript
+/*------DNA to RNA Conversion------*/
 
+/*-------- Yurii Komaniak---------*/
 
-function makeNegative(num) {
-    if (num > 0) {
-        return -num;
-    }
-    else {
-        return num;
-    }
+function DNAtoRNA(dna) {
+  return dna.replaceAll("T","U");
 }
 
