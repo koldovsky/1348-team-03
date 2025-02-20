@@ -21,4 +21,3 @@ function min(arr, toReturn) {
   const smallest = Math.min(...arr);
   return toReturn === "value" ? smallest : arr.indexOf(smallest);
 }
-}
