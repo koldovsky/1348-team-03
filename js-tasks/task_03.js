@@ -3,19 +3,22 @@
 
 /*--------Yurii Komaniak----------*/
 
-var min = function(list){
-   minNumber=list[0] ;
-   for (i=1;i<list.length;i++) {
-     if (minNumber>list[i]){minNumber=list[i];}
-   }
-   return minNumber;
-}
+var min = function (list) {
+  minNumber = list[0];
+  for (i = 1; i < list.length; i++) {
+    if (minNumber > list[i]) {
+      minNumber = list[i];
+    }
+  }
+  return minNumber;
+};
 
-var max = function(list){
-    maxNumber=list[0] ;
-   for (i=1;i<list.length;i++) {
-     if (maxNumber<list[i]){maxNumber=list[i];}
-   }
-   return maxNumber;
-}
-
+var max = function (list) {
+  maxNumber = list[0];
+  for (i = 1; i < list.length; i++) {
+    if (maxNumber < list[i]) {
+      maxNumber = list[i];
+    }
+  }
+  return maxNumber;
+};
