@@ -15,3 +15,12 @@ function min(arr, toReturn) {
   return toReturn === "value" ? minNumber : index;
 }
 
+
+/*------- Oleksandr Krasylnykov ------*/
+var min = function(list){
+    return Math.min(...list);
+}
+
+var max = function(list){
+    return Math.max(...list);
+}
