@@ -3,7 +3,7 @@
 
 /*-------- Yurii Komaniak---------*/
 
-https: function stringToArray(string) {
+ function stringToArray(string) {
   return string.split(" ");
 }
 
