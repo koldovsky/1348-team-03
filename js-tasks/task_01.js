@@ -9,5 +9,5 @@ https: function stringToArray(string) {
 
 /*------- Oleksandr Krasylnykov ------*/
 function stringToArray(string){
-	return string.split(" ");
+    return string.split(" ");
 }
