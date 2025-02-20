@@ -6,3 +6,8 @@
 https: function stringToArray(string) {
   return string.split(" ");
 }
+
+/*------- Oleksandr Krasylnykov ------*/
+function stringToArray(string){
+	return string.split(" ");
+}
