@@ -6,3 +6,8 @@
 https: function DNAtoRNA(dna) {
   return dna.replaceAll("T", "U");
 }
+
+/*------- Oleksandr Krasylnykov ------*/
+function DNAtoRNA(dna) {
+  return dna.replace(/T/g, "U");
+}
