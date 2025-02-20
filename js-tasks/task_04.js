@@ -21,3 +21,10 @@ function min(arr, toReturn) {
   const smallest = Math.min(...arr);
   return toReturn === "value" ? smallest : arr.indexOf(smallest);
 }
+
+
+/*------- Nikita Zemlianskyi ------*/
+function min(arr, toReturn) {
+	const minNum = Math.min(...arr);
+	return toReturn === "value" ? minNum : arr.indexOf(minNum);
+}

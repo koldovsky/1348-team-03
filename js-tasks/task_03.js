@@ -32,3 +32,7 @@ var min = function(list){
 var max = function(list){
     return Math.max(...list);
 }
+
+/*------- Nikita Zemlianskyi ------*/
+const min = (arr) => Math.min(...arr);
+const max = (arr) => Math.max(...arr);

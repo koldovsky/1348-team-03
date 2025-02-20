@@ -11,3 +11,8 @@
 function stringToArray(string){
     return string.split(" ");
 }
+
+/*------- Nikita Zemlianskyi ------*/
+function stringToArray(string) {
+	return string.split(' ');
+}

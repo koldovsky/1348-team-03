@@ -11,3 +11,8 @@ https: function DNAtoRNA(dna) {
 function DNAtoRNA(dna) {
   return dna.replace(/T/g, "U");
 }
+
+/*------- Nikita Zemlianskyi ------*/
+function DNAtoRNA(dna) {
+	return dna.replaceAll('T', 'U');
+}
