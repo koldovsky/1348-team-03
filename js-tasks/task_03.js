@@ -36,3 +36,7 @@ var max = function(list){
 /*------- Nikita Zemlianskyi ------*/
 const min = arr => Math.min(...arr);
 const max = arr => Math.max(...arr);
+
+/*------- Viacheslav Simkiv ------*/
+const min = (list) => (list.length ? Math.min(...list) : null);
+const max = (list) => (list.length ? Math.max(...list) : null);
