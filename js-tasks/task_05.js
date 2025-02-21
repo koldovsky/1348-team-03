@@ -7,6 +7,7 @@ function doubleInteger(i) {
   return i * 2;
 }
 
+/*------- Oleksandr Krasylnykov ------*/
 function doubleInteger(i) {
   return i*2;
 }
@@ -28,6 +29,13 @@ function twiceAsOld(dadYearsOld, sonYearsOld) {
   }
 }
 
+/*------- Oleksandr Krasylnykov ------*/
+function twiceAsOld(dadYearsOld, sonYearsOld) {
+  return Math.abs(dadYearsOld - 2 * sonYearsOld);
+}
+
+
+
 /*       https://www.codewars.com/kata/5933a1f8552bc2750a0000ed/train/javascript      */
 
 /*--------------------Get Nth Even Number--------------------------*/
@@ -36,6 +44,12 @@ function twiceAsOld(dadYearsOld, sonYearsOld) {
 function nthEven(n) {
   return n * 2 - 2;
 }
+
+/*------- Oleksandr Krasylnykov ------*/
+function nthEven(n){
+  return n * 2 - 2;
+}
+
 
 /*       https://www.codewars.com/kata/574b3b1599d8f897470018f6/train/javascript      */
 
@@ -57,6 +71,13 @@ function getRealFloor(n) {
   return n;
 }
 
+/*------- Oleksandr Krasylnykov ------*/
+function getRealFloor(n) {
+  return n >= 13 ? n - 2 : n > 0 ? n - 1 : n;
+}
+
+
+
 /*       https://www.codewars.com/kata/55f9bca8ecaa9eac7100004a/train/javascript      */
 
 /*--------------------Beginner Series #2 Clock--------------------------*/
@@ -66,12 +87,22 @@ function past(h, m, s) {
   return (h * 60 * 60 + m * 60 + s) * 1000;
 }
 
+/*------- Oleksandr Krasylnykov ------*/
+function past(h, m, s){
+  return 1000 * (s + 60 * (m + h * 60 ));
+}
+
 /*       https://www.codewars.com/kata/5545f109004975ea66000086/train/javascript      */
 
 /*--------------------Is n divisible by x and y?--------------------------*/
 
 /*------------------Yurii Komaniak----------------------*/
 
+function isDivisible(n, x, y) {
+  return n % x === 0 && n % y === 0;
+}
+
+/*------- Oleksandr Krasylnykov ------*/
 function isDivisible(n, x, y) {
   return n % x === 0 && n % y === 0;
 }
