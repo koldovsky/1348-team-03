@@ -1,21 +1,9 @@
-//www.codewars.com/kata/convert-a-string-to-an-array/train/javascript
-/*------Convert a string to an array------*/
+//https://www.codewars.com/kata/geometry-basics-circle-circumference-in-2d/train/javascript
+/*------Geometry Basics: Circle Circumference in 2D------*/
 
 /*-------- Yurii Komaniak---------*/
 
- function stringToArray(string) {
-  return string.split(" ");
-}
-
-/*------- Oleksandr Krasylnykov ------*/
-function stringToArray(string){
-    return string.split(" ");
-}
-
-/*------- Nikita Zemlianskyi ------*/
-function stringToArray(string) {
-	return string.split(' ');
-}
-
-/*-------- Viacheslav Simkiv---------*/
-const stringToArray = (string) => string.split(" ");
+function circleCircumference(circle) {
+  return 2*Math.PI*circle.radius.toFixed(6);
+  }
+  
