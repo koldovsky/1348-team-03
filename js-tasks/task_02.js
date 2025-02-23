@@ -11,3 +11,13 @@ function giveMeFive(obj){
  }
  return res;
 }
+
+/*------- Nikita Zemlianskyi ------*/
+function giveMeFive(obj) {
+  const values = [];
+  for (let key in obj) {
+      key.length === 5 ? values.push(key) : null;
+      obj[key].length === 5 ? values.push(obj[key]) : null;
+  }
+  return values;
+}

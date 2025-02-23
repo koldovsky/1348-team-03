@@ -6,4 +6,6 @@
 function circleCircumference(circle) {
   return 2*Math.PI*circle.radius.toFixed(6);
   }
-  
+
+/*------- Nikita Zemlianskyi ------*/
+const circleCircumference = circle => 2 * Math.PI * circle.radius;
