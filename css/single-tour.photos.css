@@ -4,6 +4,7 @@
     grid-template-areas:
         "gallery__roedeer gallery__lion gallery__car"
         "gallery__giraffe gallery__lion gallery__car"
+        "gallery__giraffe gallery__tree gallery__car"
         "gallery__giraffe gallery__tree gallery__animals";
     max-width: 1090px;
     margin: auto;
