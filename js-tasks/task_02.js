@@ -21,3 +21,13 @@ function giveMeFive(obj) {
   }
   return values;
 }
+
+/*------- Oleksandr Krasylnykov ------*/
+function giveMeFive(obj){
+  let arr = []; 
+  for (let [key, value] of Object.entries(obj)){
+    if (key.length === 5) arr.push(key);
+    if (value.length === 5) arr.push(value);
+  }
+  return arr;
+}
