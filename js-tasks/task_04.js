@@ -1,30 +1,57 @@
-/*   https://www.codewars.com/kata/544a54fd18b8e06d240005c0/train/javascript     */
-/* -----  Smallest value of an array ------*/
+/*   https://www.codewars.com/kata/fun-with-es6-classes-number-2-animals-and-inheritance/train/javascript     */
+/* -----  Fun with ES6 Classes #2 - Animals and Inheritance ------*/
 
-/*--------Yurii Komaniak---------*/
-
-function min(arr, toReturn) {
-  let minNumber = arr[0];
-  let index = 0;
-  for (let i = 1; i < arr.length; i++) {
-    if (minNumber > arr[i]) {
-      minNumber = arr[i];
-      index = i;
-    }
+/*------- Taras Stets -----------*/
+class Shark extends Animal {
+  constructor(name, age, status) {
+   super(name, age, 0, 'shark', status); 
   }
-  return toReturn === "value" ? minNumber : index;
+}
+
+class Cat extends Animal {
+ constructor(name, age, status) {
+   super(name, age, 4, 'cat', status);
+ }
+  introduce() {
+    return super.introduce() + "  Meow meow!";
+  }
+}
+
+class Dog extends Animal {
+  constructor(name, age, status, master){
+    super(name, age, 4, 'dog', status);
+    this.master = master
+  }
+  greetMaster() {
+    return `Hello ${this.master}`;
+  }
 }
 
 
 /*------- Oleksandr Krasylnykov ------*/
-function min(arr, toReturn) { 
-  const smallest = Math.min(...arr);
-  return toReturn === "value" ? smallest : arr.indexOf(smallest);
+class Shark extends Animal {
+  constructor(name, age, status) {
+    super(name, age, 0, "shark", status);
+  }
 }
 
+class Cat extends Animal {
+  constructor(name, age, status, legs, species) {
+    super(name, age, 4, "cat", status);
+  }
+  
+  introduce() {
+    return super.introduce() + "  Meow meow!";
+  }
+}
 
-/*------- Nikita Zemlianskyi ------*/
-function min(arr, toReturn) {
-	const minNum = Math.min(...arr);
-	return toReturn === "value" ? minNum : arr.indexOf(minNum);
+class Dog extends Animal {
+  constructor(name, age, status, master, legs, species) {
+    super(name, age, 4, "dog", status);
+    this.master = master;
+  }
+  
+  greetMaster() {
+    return `Hello ${this.master}`;
+  }
 }
