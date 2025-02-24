@@ -44,14 +44,15 @@
 @media (max-width: 990px) {
     .gallery__items {
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 90px 70px 100px 30px 60px 10px;
         width: auto;
         max-width: fit-content;
         grid-template-areas:
             "gallery__roedeer gallery__lion"
             "gallery__car gallery__lion"
             "gallery__car gallery__giraffe"
+            "gallery__car gallery__giraffe"
+            "gallery__car gallery__giraffe"
+            "gallery__tree gallery__giraffe"
             "gallery__tree gallery__giraffe"
             "gallery__tree gallery__animals";
         gap: 15px;
