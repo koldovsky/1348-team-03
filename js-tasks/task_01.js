@@ -9,3 +9,8 @@ function circleCircumference(circle) {
 
 /*------- Nikita Zemlianskyi ------*/
 const circleCircumference = circle => 2 * Math.PI * circle.radius;
+
+/*------- Oleksandr Krasylnykov ------*/
+function circleCircumference(circle) {
+  return parseFloat((2 * Math.PI * circle.radius).toFixed(6));
+}
