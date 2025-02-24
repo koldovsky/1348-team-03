@@ -14,3 +14,8 @@ const circleCircumference = circle => 2 * Math.PI * circle.radius;
 function circleCircumference(circle) {
   return parseFloat((2 * Math.PI * circle.radius).toFixed(6));
 }
+
+/*-------- Taras Stets -------*/
+function circleCircumference(circle) {
+ return 2*(Math.PI * circle.radius)
+}
