@@ -99,6 +99,11 @@
       }
     }
   }
+  .adventure__clock {
+    padding-left: 120px;
+    padding-top: 10px;
+    font-size: 34px;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -111,7 +116,8 @@
       font-size: 40px;
       padding-top: 90px;
 
-      .adventure__title-text {}
+      .adventure__title-text {
+      }
     }
 
     .adventure__info {

@@ -1,6 +1,7 @@
 function init() {
     import("...js");
     import("./index.animals-carousel.js");
+    import("./index.call-form-clock.js");
   }
   
   const totalPartials = document.querySelectorAll(

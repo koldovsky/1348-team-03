@@ -98,12 +98,13 @@
     display: grid;
     grid-template-columns: 50px 1fr 50px;
     gap: 10px;
+    
     min-height: 300px;
     .animals-carousel__slides {
       display: flex;
       align-items: center;
       justify-content: space-around;
-      
+
       div {
         flex: 0 0 50%;
         box-sizing: border-box;
@@ -117,10 +118,9 @@
       }
     }
 
-    .animals-carousel__slides > div {
-      flex: 0 0 50%; /* Каждое изображение занимает 50% ширины контейнера */
-      box-sizing: border-box;
-      padding: 10px;
+    .animals-carousel__btn-next,
+    .animals-carousel__btn-prev {
+      background-color: var(--color-secondary-dark);
     }
   }
 }
