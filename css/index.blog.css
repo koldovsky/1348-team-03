@@ -1,8 +1,18 @@
-/* Основні стилі секції */
+/* Оновлені стилі секції */
+
+.blog__transition--image{
+  width:100vw;
+  background-color: #fff;
+}
+
 .blog {
+  height: 100vh;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 60px 20px;
-  background-color: #fff ;
+  background-color: #fff;
   font-family: "Titillium Web", sans-serif;
 }
 
@@ -10,6 +20,7 @@
   font-size: 34px;
   color: var(--color-secondary-dark);
   margin-bottom: 10px;
+  font-weight: bold;
 }
 
 .blog__description {
@@ -19,23 +30,52 @@
 }
 
 .blog__list {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
-  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1200px;
 }
 
 .blog__item {
   overflow: hidden;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: left;
-  width: 320px;
+  width: 100%;
+  background: #fff;
 }
 
 .blog__item--highlighted {
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(/img/blog/girafes.png);
+  background-size: cover;
+  min-height: 100%;
   position: relative;
-  width: 340px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 20px;
+}
+
+.blog__content--girafe {
+  text-align: left;
+  color: white;
+}
+
+.blog__headline--girafe {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.blog__button button {
+  padding: 12px 25px;
+  background-color: var( --color-accent);
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-top: 15px;
 }
 
 .blog__image {
@@ -49,22 +89,19 @@
 }
 
 .blog__tag {
-  display: inline-block;
-  font-size: 12px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 10px;
-  color: #222;
 }
 
-.blog__tag--tips {
-  color: #ffcc00;
-}
 
 .blog__headline {
-  font-size: 18px;
+  font-size: 22px;
   font-weight: bold;
-  margin-bottom: 10px;
+  color: var(--color-secondary-dark);
 }
 
 .blog__excerpt {
@@ -73,25 +110,10 @@
   margin-bottom: 15px;
 }
 
-.blog__button {
-  display: inline-block;
-  background: red;
-  color: #f32f2a;
-  font-size: 14px;
-  font-weight: bold;
-  padding: 10px 20px;
-  border-radius: 20px;
-  text-decoration: none;
-}
-
 .blog__read-more {
   display: inline-block;
   font-size: 14px;
   font-weight: bold;
-  color: #f32f2a;
-  text-decoration: underline;
-}
-
-.blog__read-more:hover {
+  color: var( --color-accent) !important;
   text-decoration: underline;
 }
