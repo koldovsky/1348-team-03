@@ -1,5 +1,6 @@
 function init() {
     import("...js");
+    import("./index.animals-carousel.js");
   }
   
   const totalPartials = document.querySelectorAll(
