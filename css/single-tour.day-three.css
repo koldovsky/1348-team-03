@@ -36,7 +36,7 @@
 }
 
 .safari-day-three__icon {
-    color: rgb(243, 42, 42);
+    color: var(--color-accent);
     max-width: 20px;
     height: 20px;
 }

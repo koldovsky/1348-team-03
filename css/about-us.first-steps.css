@@ -1,0 +1,29 @@
+.steps {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    text-align: left;
+    padding: 20px;
+  }
+  
+  .steps__item {
+    max-width: 250px;
+    
+  }
+  
+  .steps__number {
+
+    color: yellow;
+  }
+  
+  .steps__heading {
+    font-size: 40px ;
+    font-weight: bold;
+    font-family: "Permanent Marker", serif;
+  }
+  
+  .steps__description {
+    font-size: 17px;
+    margin-top: 10px;
+    font-family: 'Titillium Web', sans-serif;
+  }

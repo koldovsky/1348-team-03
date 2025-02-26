@@ -1,11 +1,20 @@
+.gallery {
+    margin: 60px 0;
+}
+
 .gallery__items {
     display: grid;
-    gap: 27px;
+    gap: 28px;
     grid-template-areas:
         "gallery__roedeer gallery__lion gallery__car"
         "gallery__giraffe gallery__lion gallery__car"
+        "gallery__giraffe gallery__tree gallery__car"
+        "gallery__giraffe gallery__tree gallery__car"
+        "gallery__giraffe gallery__tree gallery__car"
+        "gallery__giraffe gallery__tree gallery__car"
+        "gallery__giraffe gallery__tree gallery__car"
         "gallery__giraffe gallery__tree gallery__animals";
-    max-width: 1000px;
+    max-width: 1090px;
     margin: auto;
 }
 
@@ -13,6 +22,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+
 }
 
 .gallery__roedeer {
@@ -21,6 +31,12 @@
 
 .gallery__lion {
     grid-area: gallery__lion;
+    width: 100%;
+    max-height: 375px;
+    overflow: hidden;
+    position: relative;
+    object-position: 100% 5%;
+
 }
 
 .gallery__car {
@@ -42,14 +58,96 @@
 /* Адаптація під мобільні пристрої */
 @media (max-width: 990px) {
     .gallery__items {
+        display: grid;
+        width: auto;
+        max-width: fit-content;
         grid-template-areas:
             "gallery__roedeer gallery__lion"
+            "gallery__car gallery__lion"
             "gallery__car gallery__giraffe"
+            "gallery__car gallery__giraffe"
+            "gallery__car gallery__giraffe"
+            "gallery__tree gallery__giraffe"
+            "gallery__tree gallery__giraffe"
             "gallery__tree gallery__animals";
         gap: 15px;
-        max-width: auto;
         padding-left: 15px;
         padding-right: 15px;
         padding-bottom: 45px;
+
+
     }
+
+    .gallery__lion {
+        grid-area: gallery__lion;
+        width: 100%;
+        max-height: auto;
+        overflow: hidden;
+        position: relative;
+        object-position: 100% 5%;
+
+    }
+
+
+}
+
+.gallery__items img:hover {
+    transform: scale(1.01);
+}
+
+.lightbox {
+    padding: 2em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    backdrop-filter: blur(4px);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    transition: 0.3s ease-in;
+    z-index: 2;
+    overflow-y: scroll;
+}
+
+.lightbox::-webkit-scrollbar {
+    display: none;
+}
+
+.lightbox img {
+    margin: auto 0;
+    max-height: 500px;
+    width: auto;
+    max-width: 90%;
+    box-shadow: 0 10px 35px var(--color-background-main);
+    user-select: none;
+}
+
+.arrow {
+    font-size: 1.4em;
+    position: fixed;
+    top: 50%;
+    text-align: center;
+    color: var(--base-color);
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.arrow:hover {
+    color: var(--base-color);
+}
+
+.arrow-left {
+    left: 1em;
+}
+
+.arrow-right {
+    right: 1em;
+}
+
+.lightbox {
+    display: none;
+    opacity: 0;
 }

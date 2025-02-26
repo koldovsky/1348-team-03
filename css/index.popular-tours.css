@@ -14,6 +14,7 @@
         font-size: 19px;
         margin-top: 25px;
         text-align: center;
+        font-weight: 600;
     }
 
     .popular-tours__carousel {
@@ -31,6 +32,7 @@
             flex-direction: column;
 
             .popular-tours__arrow {
+                width: fit-content;
                 position: absolute;
                 display: flex;
                 align-items: center;
@@ -40,7 +42,7 @@
                 border: 0;
                 border-radius: 20px;
                 fill: var(--color-background-main);
-                opacity: 0.5;
+                opacity: 0.8;
                 transition: 0.2s linear;
                 top: 50%;
 
@@ -60,9 +62,9 @@
             }
 
             .popular-tours__arrow svg {
-                margin: auto;
-                max-width: 24px;
-                max-height: 24px;
+                width: 24px;
+                height: 24px;
+                opacity: 0.8;
             }
 
             .popular-tours__card-image img {
@@ -106,7 +108,7 @@
                 }
 
                 .popular-tours__card-description {
-                    color: var(--color-background-main);
+                    color: var(--subtitle-color);
                     font-size: 17px;
                     margin-top: 20px;
                 }
@@ -143,11 +145,13 @@
                 .popular-tours__card-info {
                     padding: 60px 70px;
                 }
+            }
 
+            @media (min-width:1200px) {
                 .popular-tours__arrow {
                     background-color: transparent;
                     fill: var(--primary-color);
-                    opacity: 0.5;
+                    opacity: 0.8;
                     transition: 0.2s linear;
                 }
 
@@ -157,12 +161,11 @@
                 }
 
                 .popular-tours__arrow--prev {
-                    left: -30px;
-                    ;
+                    left: -50px;
                 }
 
                 .popular-tours__arrow--next {
-                    right: -30px;
+                    right: -50px;
                 }
             }
         }

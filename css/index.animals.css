@@ -93,6 +93,36 @@
       grid-template-columns: repeat(1, 1fr);
     }
   }
+
+  .animals-carousel {
+    display: grid;
+    grid-template-columns: 50px 1fr 50px;
+    gap: 10px;
+    
+    min-height: 300px;
+    .animals-carousel__slides {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+
+      div {
+        flex: 0 0 50%;
+        box-sizing: border-box;
+        padding: 10px;
+      }
+
+      img {
+        height: 300px;
+        width: 100%;
+        object-fit: contain;
+      }
+    }
+
+    .animals-carousel__btn-next,
+    .animals-carousel__btn-prev {
+      background-color: var(--color-secondary-dark);
+    }
+  }
 }
 
 @media (min-width: 1440px) {
