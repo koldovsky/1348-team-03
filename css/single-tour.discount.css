@@ -12,6 +12,11 @@
   position: relative;
   max-width: 1200px;
 
+  .overlay__countdown {
+    font-size: 19px;
+    font-family: "Titillium Web", sans-serif;
+  }
+
   .overlay__early-bird {
     font-family: Permanent Marker;
     font-size: clamp(2.125rem, 4vw, 2.5rem);
