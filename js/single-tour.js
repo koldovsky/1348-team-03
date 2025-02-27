@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const scripts = [
       "./single-tour.discount.partial.js",
       "./single-tour.photos.js",
+      "./single-tour.day-one.js",
     ];
 
     scripts.forEach((src) => {

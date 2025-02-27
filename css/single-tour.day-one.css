@@ -4,42 +4,21 @@
   max-width: 1200px;
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
 }
 
-.single-tour-day-one__gallery {
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
-}
-
-.single-tour-day-one__gallery-text {
-  flex: 1;
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.single-tour-day-one__gallery-item {
-  flex: 1;
-  width: 50%;
-  display: flex;
-  justify-content: center;
-}
-
-.single-tour-day-one__gallery-image {
-  max-width: 100%;
-  height: auto;
-}
-
-@media (max-width: 768px) {
-  .single-tour-day-one__gallery {
-    flex-direction: column;
+@media (min-width: 1024px) {
+  .single-tour-day-one {
+    flex-direction: row;
+    align-items: flex-start;
   }
 
-  .single-tour-day-one__gallery-text,
-  .single-tour-day-one__gallery-item {
-    width: 100%;
+  .single-tour-day-one__content {
+    flex: 1;
+    max-width: 50%;
+  }
+
+  .single-tour-day-one__gallery {
+    flex: 1;
+    max-width: 50%;
   }
 }
