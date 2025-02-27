@@ -16,14 +16,13 @@
         "gallery__giraffe gallery__tree gallery__animals";
     max-width: 1090px;
     margin: auto;
-    cursor: pointer;
 }
 
 .gallery__items img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-
+    cursor: pointer;
 }
 
 .gallery__roedeer {
