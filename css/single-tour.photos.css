@@ -16,6 +16,7 @@
         "gallery__giraffe gallery__tree gallery__animals";
     max-width: 1090px;
     margin: auto;
+    cursor: pointer;
 }
 
 .gallery__items img {
