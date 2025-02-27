@@ -6,7 +6,7 @@
   flex-direction: column;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .single-tour-day-one {
     flex-direction: row;
     align-items: flex-start;
@@ -21,4 +21,9 @@
     flex: 1;
     max-width: 50%;
   }
+}
+
+.single-tour-day-one__header {
+  width: 100%;
+  text-align: center;
 }
