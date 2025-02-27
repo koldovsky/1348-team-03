@@ -3,6 +3,7 @@ function init() {
     import("./index.animals-carousel.js");
     import("./index.call-form-clock.js");
     import("./index.advantages-load.js");
+    import("./indes.pupular-tours-carousel.js");
   }
   
   const totalPartials = document.querySelectorAll(

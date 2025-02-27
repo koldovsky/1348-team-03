@@ -1,38 +1,34 @@
-
 const images = document.querySelectorAll(".gallery__items img");
-const lightbox = document.querySelector(".lightbox");
-const mainImg = document.querySelector(".lightbox img");
-const arrLeft = document.querySelector(".arrow-left");
-const arrRight = document.querySelector(".arrow-right");
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = document.querySelector(".lightbox-img");
+const closeBtn = document.querySelector(".close");
+const prevBtn = document.getElementById("prev");
+const nextBtn = document.getElementById("next");
 
-let imgIndex = 0;
+let currentIndex = 0;
 
-images.forEach(img => {
-    img.addEventListener("click", e => {
-        mainImg.src = e.target.src;
-        imgIndex = [...images].indexOf(img);
+images.forEach((img, index) => {
+    img.addEventListener("click", () => {
+        currentIndex = index;
+        showImage();
         lightbox.style.display = "flex";
-        setTimeout(() => {
-            lightbox.style.opacity = '1';
-
-        }, 10);
     });
 });
 
-window.addEventListener('click', e => {
-    if (e.target.classList.contains('lightbox')) {
-        lightbox.style.opacity = '0';
-        setTimeout(() => {
-            lightbox.style.display = "none";
-        }, 350);
-    }
+closeBtn.addEventListener("click", () => {
+    lightbox.style.display = "none";
 });
 
-arrLeft.addEventListener('click', () => {
-    imgIndex--;
-    if (imgIndex < 0) {
-        imgIndex = imges.length - 1;
-
-    }
-    mainImg.src = images[imgIndex].src;
+prevBtn.addEventListener("click", () => {
+    currentIndex = (currentIndex - 1 + images.length) % images.length;
+    showImage();
 });
+
+nextBtn.addEventListener("click", () => {
+    currentIndex = (currentIndex + 1) % images.length;
+    showImage();
+});
+
+function showImage() {
+    lightboxImg.src = images[currentIndex].src;
+}

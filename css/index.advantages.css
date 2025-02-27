@@ -1,54 +1,57 @@
 .advantages {
-    padding: 30px 0px 60px;
-    min-width: 320px;
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-content: center;
-    gap: 60px;
+  padding: 30px 0px 60px;
+  min-width: 320px;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  gap: 60px;
 
-    .advantages__item {
-        padding: 0 30px;
+  .advantages__item {
+    padding: 0 30px;
+  }
+
+  .advantages__icon-wrapper {
+    display: flex;
+    background-color: var(--color-background-muted);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    .advantages__icon {
+      width: 26px;
     }
+  }
+
+  .advantages__title {
+    font-size: 26px;
+    margin-top: 20px;
+    font-weight: 700;
+  }
+
+  .advantages__text {
+    color: var(--subtitle-color);
+    font-size: 17px;
+  }
+
+  .advantages__line {
+    max-width: 53px;
+  }
+
+  @media (min-width: 480px) {
+    grid-template-columns: 1fr 1fr;
 
     .advantages__icon-wrapper {
-        display: flex;
-        background-color: var(--color-background-muted);
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        align-items: center;
-        justify-content: center;
+      width: 70px;
+      height: 70px;
+      .advantages__icon {
+        width: 35px;
+      }
     }
+  }
 
-    .advantages__title {
-        font-size: 22px;
-        margin-top: 20px;
-    }
-
-    .advantages__text {
-        color: var(--subtitle-color);
-        font-size: 17px;
-    }
-
-    .advantages__line {
-        max-width: 53px;
-    }
-
-    @media (min-width: 480px) {
-        grid-template-columns: 1fr 1fr;
-
-        .advantages__icon-wrapper {
-            width: 70px;
-            height: 70px;
-        }
-
-        .advantages__icon {
-            width: 40px;
-        }
-    }
-
-    @media (min-width: 1020px) {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        gap: 0;
-    }
+  @media (min-width: 1020px) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 0;
+  }
 }

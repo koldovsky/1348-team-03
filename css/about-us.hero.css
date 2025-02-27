@@ -1,7 +1,7 @@
 .header--about-us {
     background-image: url(../img/header/secondary.header.jpg);
-    width: 100%;
-    min-height: 600px;
+    height: 100%;
+    min-height: 700px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
