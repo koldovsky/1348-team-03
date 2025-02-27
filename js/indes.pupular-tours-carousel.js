@@ -2,7 +2,7 @@
 const slides = [
   {
     img_src: "img/popular_tours/ultimate-safari.webp",
-    img_alt: "Safari tour",
+    img_alt: "Ultimate Safari tour",
     tag: "Long Tour",
     title: "Ultimate Safari",
     detailslist: ["7 days", "20-35", "$840"],
@@ -10,20 +10,38 @@ const slides = [
       "Set out on an exciting week-long journey through Zimbabwe – from Hwange National Park to Mana Pools to Victoria Falls National Park.",
   },
   {
-    img_src: "img/popular_tours/ultimate-safari.webp",
-    img_alt: "Safari tour",
+    img_src: "img/popular_tours/wildlife-safari.webp",
+    img_alt: "Wildlife Safari tour",
+    tag: "Weekend Tour",
+    title: "Wildlife Safari",
+    detailslist: ["3 days", "20-35", "$140"],
+    description:
+      "Led by professional guides, you will spend your vacations searching for the Big Five and marvelous wildlife on a journey in the National Park.",
+  },
+  {
+    img_src: "img/popular_tours/classic-safari.webp",
+    img_alt: "Classic Safari tour",
     tag: "Weekend Tour",
     title: "Classic Safari",
     detailslist: ["3 days", "20-35", "$240"],
     description:
       "Experience the best wildlife viewing and authentic culture on our 3-day family-friendly Classic Safari tour to Hwange National Park.",
   },
+  {
+    img_src: "img/popular_tours/luxury-safary.webp",
+    img_alt: "Luxury Safari tour",
+    tag: "Weekend Tour",
+    title: "Luxury Safari",
+    detailslist: ["3 days", "20-35", "$340"],
+    description:
+      "Discover some of the most diverse wildlife on a 6-day journey through the rainforests of the Congo Basin. For experienced adventurers only.",
+  },
 ];
 
 let currentSlideIdx = 0;
 renderCarousel(slides);
-const prevButton = document.querySelector(".popular-tours__arrow--prev");
-const nextButton = document.querySelector(".popular-tours__arrow--next");
+let prevButton = document.querySelector(".popular-tours__arrow--prev");
+let nextButton = document.querySelector(".popular-tours__arrow--next");
 
 function renderCarousel(slides) {
   const carouselContainer = document.querySelector(".popular-tours__carousel");
@@ -74,11 +92,19 @@ function renderCarousel(slides) {
 function nextSlide() {
   currentSlideIdx = (currentSlideIdx + 1) % slides.length;
   renderCarousel(slides);
+  prevButton = document.querySelector(".popular-tours__arrow--prev");
+  nextButton = document.querySelector(".popular-tours__arrow--next");
+  nextButton.addEventListener("click", nextSlide);
+  prevButton.addEventListener("click", prevSlide);
 }
 
 function prevSlide() {
   currentSlideIdx = (currentSlideIdx - 1 + slides.length) % slides.length;
   renderCarousel(slides);
+  prevButton = document.querySelector(".popular-tours__arrow--prev");
+  nextButton = document.querySelector(".popular-tours__arrow--next");
+  nextButton.addEventListener("click", nextSlide);
+  prevButton.addEventListener("click", prevSlide);
 }
 
 //renderCarousel(slides);
