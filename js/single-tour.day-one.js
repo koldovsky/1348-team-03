@@ -15,14 +15,15 @@ document.addEventListener("DOMContentLoaded", () => {
       container.style.display = "flex";
       container.style.flexDirection = "row";
       container.style.alignItems = "flex-start";
+      container.style.justifyContent = "center";
 
       content.style.flex = "1";
-      content.style.maxWidth = "50%";
+      content.style.maxWidth = "48%";
+      content.style.textAlign = "left";
 
       gallery.style.flex = "1";
-      gallery.style.maxWidth = "50%";
+      gallery.style.maxWidth = "48%";
     } else {
-
       container.style.display = "flex";
       container.style.flexDirection = "column";
 

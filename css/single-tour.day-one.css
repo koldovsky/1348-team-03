@@ -1,29 +1,44 @@
 .single-tour-day-one {
-  padding: 60px 24px;
-  min-width: 272px;
-  max-width: 1200px;
   display: flex;
   flex-direction: column;
-}
-
-@media (min-width: 768px) {
-  .single-tour-day-one {
-    flex-direction: row;
-    align-items: flex-start;
-  }
-
-  .single-tour-day-one__content {
-    flex: 1;
-    max-width: 50%;
-  }
-
-  .single-tour-day-one__gallery {
-    flex: 1;
-    max-width: 50%;
-  }
-}
-
-.single-tour-day-one__header {
+  align-items: center;
   width: 100%;
-  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  .single-tour-day-one__header {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  .single-tour-day-one__container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+    padding: 0 24px;
+  }
+
+  @media (min-width: 768px) {
+    .single-tour-day-one__container {
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: center;
+      gap: 40px;
+    }
+
+    .single-tour-day-one__content,
+    .single-tour-day-one__gallery {
+      flex: 1;
+      max-width: 48%;
+    }
+  }
+
+  .single-tour-day-one__description,
+  .single-tour-day-one__info,
+  .single-tour-day-one__gallery-info {
+    font-size: 17px;
+    line-height: 1.6;
+  }
 }
