@@ -8,13 +8,12 @@
     <img src="img/cards/tree.webp" class="gallery__tree" alt="A tree" />
     <img src="img/cards/animals.webp" class="gallery__animals" alt="Animals" />
   </div>
-  <div class="lightbox">
-    <img class="lightbox-img" src="#" alt="lightbox image">
-    <div class="arrow arrow-left">
-      <i class="fas fa-arrow-left"></i>
-    </div>
-    <div class="arrow arrow-right">
-      <i class="fas fa-arrow-right"></i>
+  <div id="lightbox" class="lightbox">
+    <span class="close">&times;</span>
+    <img class="lightbox-img" src="" alt="Full Image">
+    <div class="nav">
+      <button id="prev">&#10094;</button>
+      <button id="next">&#10095;</button>
     </div>
   </div>
   <script src="js/single-tour.photos.js"></script>
