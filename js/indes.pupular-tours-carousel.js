@@ -44,10 +44,11 @@ let currentSlideIdx = 0;
 
 function renderCarousel(slides) {
   const carouselContainer = document.querySelector(".popular-tours__card");
-  const currentSlide = slides[currentSlideIdx];
+  carouselContainer.style.opacity = 0;
 
-  carouselContainer.innerHTML = `<div class="popular-tours__card">
-      <div class="popular-tours__card-image">
+  setTimeout(() => {
+    const currentSlide = slides[currentSlideIdx];
+    carouselContainer.innerHTML = `<div class="popular-tours__card-image">
         <img src="${currentSlide.img_src}" alt="${currentSlide.img_alt}" />
       </div>
       <div class="popular-tours__card-info">
@@ -60,13 +61,15 @@ function renderCarousel(slides) {
           <li class="popular-tours__card-detail">
             People in group — <span>${currentSlide.detailslist[1]}</span>
           </li>
-          <li class="popular-tours__card-detail">Price — <span>${currentSlide.detailslist[2]}</span></li>
+          <li class="popular-tours__card-detail">
+            Price — <span>${currentSlide.detailslist[2]}</span>
+          </li>
         </ul>
         <p class="popular-tours__card-description">${currentSlide.description}</p>
-        <a href="/single-tour.html" class="popular-tours__card-button"
-          >Learn More</a
-        >
+        <a href="/single-tour.html" class="popular-tours__card-button">Learn More</a>
       </div>`;
+    carouselContainer.style.opacity = 1;
+  }, 300);
 }
 
 function nextSlide() {
