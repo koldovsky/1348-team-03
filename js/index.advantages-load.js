@@ -1,33 +1,5 @@
-const advantages = [
-  {
-    icon_src: "img/advantages/behemoth_icon.svg",
-    icon_alt: "Behemoth icon",
-    title: "Travel Experiences",
-    description:
-      "We deliver custom tours to Africa to create unforgettable memories for you and your companions.",
-  },
-  {
-    icon_src: "img/advantages/elephant_icon.svg",
-    icon_alt: "Elephant icon",
-    title: "Highly Qualified Team",
-    description:
-      "All our guides are fully licensed and insured to carry out tours in their country.",
-  },
-  {
-    icon_src: "img/advantages/giraffe_icon.svg",
-    icon_alt: "Giraffe icon",
-    title: "Social Responsibility",
-    description:
-      "All our guides are fully licensed and insured to carry out tours in their country.",
-  },
-  {
-    icon_src: "img/advantages/lion_icon.svg",
-    icon_alt: "Lion icon",
-    title: "Financial Insurance",
-    description:
-      "We provide ATOL License & International Passenger Protection for each trip.",
-  }
-];
+const response = await fetch("api/advantages.json");
+const advantages = await response.json();
 
 function renderAdvantages(advantages) {
   let advantagesHTML = "";
