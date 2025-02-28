@@ -44,6 +44,9 @@
     transition: background 0.3s;
     font-size: 14px;
     font-family: "Titillium Web", sans-serif;
+    width: auto;
+    max-width: 250px;
+    text-align: center;
   }
 }
 
@@ -58,17 +61,10 @@
   width: calc(100% - 50px);
 }
 
-@media (min-width: 768px) {
-  .discount__overlay {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
-  .overlay__countdown,
-  .overlay__early-bird,
-  .overlay__offer,
-  .overlay__rebate,
-  .overlay__button {
-    flex: 1 1 auto;
-  }
+.overlay__countdown,
+.overlay__early-bird,
+.overlay__offer,
+.overlay__rebate {
+  width: 100%;
+  max-width: 600px;
 }
