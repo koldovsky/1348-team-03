@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
 
 *,
 *::after,
@@ -8,7 +8,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 
 :root {
   scroll-behavior: smooth;
@@ -21,12 +20,15 @@
   --secondary-button-color: #e6b800;
   --base-color: rgb(255, 255, 255);
   font-family: "Titillium Web", sans-serif;
+  --transition-speed: 0.3s;
+  --spacing-xs:0,5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 1.5rem;
+  --header-height: 80px;
 }
-
 
 body {
   background-color: var(--color-background-main);
-
 }
 
 h1,
@@ -36,7 +38,6 @@ h4,
 h5,
 h6,
 p {
-
   color: var(--base-color);
 }
 
@@ -70,4 +71,16 @@ img {
   max-width: 1200px;
   margin: auto;
   padding: 0 24px;
+
+  @media (min-width: 768px) {
+    padding: 0 32px;
+  }
+
+  @media (min-width: 990px) {
+    padding: 0 40px;
+  }
+
+  @media (min-width: 1280) {
+    padding: 0 15px;
+  }
 }
