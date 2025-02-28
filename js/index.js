@@ -4,6 +4,7 @@ function init() {
     import("./index.call-form-clock.js");
     import("./index.advantages-load.js");
     import("./indes.pupular-tours-carousel.js");
+    import("./global.burger-menu.js");
   }
   
   const totalPartials = document.querySelectorAll(

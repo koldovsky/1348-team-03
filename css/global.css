@@ -21,6 +21,11 @@
   --secondary-button-color: #e6b800;
   --base-color: rgb(255, 255, 255);
   font-family: "Titillium Web", sans-serif;
+  --transition-speed: 0.3s;
+  --spacing-xs:0,5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 1.5rem;
+  --header-height: 80px;
 }
 
 
