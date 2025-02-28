@@ -43,4 +43,9 @@
     padding-bottom: 30px;
     color: var(--subtitle-color);
   }
+
+  .single-tour-day-one__gallery-item,
+  .single-tour-day-one__item {
+    padding-bottom: 30px;
+  }
 }

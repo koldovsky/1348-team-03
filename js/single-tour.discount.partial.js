@@ -1,21 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const discountContainer = document.querySelector(
-    ".discount__image-container"
-  );
-  const button = document.querySelector(".overlay__button");
-  const countdownElement = document.querySelector(".overlay__countdown");
-
-  button.style.opacity = "0";
-  button.style.transition = "opacity 0.5s ease-in-out";
-
-  discountContainer.addEventListener("mouseenter", () => {
-    button.style.opacity = "1";
-  });
-
-  discountContainer.addEventListener("mouseleave", () => {
-    button.style.opacity = "0";
-  });
-
   function startCountdown(targetDate) {
     function updateCountdown() {
       const now = new Date().getTime();
