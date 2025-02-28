@@ -19,34 +19,18 @@
 
   .overlay__early-bird {
     font-family: Permanent Marker;
-    font-size: clamp(2.125rem, 4vw, 2.5rem);
-    padding-left: 50px;
-    padding-right: 25px;
-    position: absolute;
-    left: 25px;
-    top: 110px;
-    line-height: 1.2;
+    font-size: clamp(2.125rem, 5vw, 2.5rem);
   }
 
   .overlay__offer {
     font-size: 19px;
     font-family: "Titillium Web", sans-serif;
-    padding-left: 50px;
-    padding-right: 70px;
-    position: absolute;
-    left: 25px;
-    top: 210px;
   }
 
   .overlay__rebate {
     font-family: Permanent Marker;
-    font-size: clamp(3.5rem, 2vw, 4.625rem);
+    font-size: clamp(3.5rem, 5vw, 4.625rem);
     color: var(--primary-color);
-    padding-left: 50px;
-    padding-right: 70px;
-    position: absolute;
-    left: 25px;
-    top: 300px;
     line-height: 1.2;
   }
 
@@ -54,15 +38,37 @@
     display: inline-block;
     text-align: left;
     background-color: var(--color-accent);
-    padding: 15px 30px;
     font-weight: bold;
     text-decoration: none;
     border-radius: 25px;
     transition: background 0.3s;
     font-size: 14px;
     font-family: "Titillium Web", sans-serif;
-    position: absolute;
-    left: 70px;
-    top: 440px;
+  }
+}
+
+.discount__overlay {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  position: absolute;
+  left: 25px;
+  top: 100px;
+  width: calc(100% - 50px);
+}
+
+@media (min-width: 768px) {
+  .discount__overlay {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .overlay__countdown,
+  .overlay__early-bird,
+  .overlay__offer,
+  .overlay__rebate,
+  .overlay__button {
+    flex: 1 1 auto;
   }
 }
