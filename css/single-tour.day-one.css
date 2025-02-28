@@ -8,14 +8,12 @@
   .single-tour-day-one__header-title {
     font-size: clamp(2.125rem, 5vw, 2.5rem);
     padding-bottom: 40px;
-    padding-left: 24px;
   }
 
   .single-tour-day-one__container {
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding: 0 24px;
   }
 
   @media (min-width: 768px) {
@@ -23,7 +21,7 @@
       flex-direction: row;
       align-items: flex-start;
       justify-content: center;
-      gap: 30px;
+      gap: 45px;
     }
 
     .single-tour-day-one__content,
