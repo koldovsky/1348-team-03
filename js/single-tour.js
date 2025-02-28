@@ -2,7 +2,7 @@ function init() {
     import("...js");
     import("./single-tour.discount.partial.js");
     import("./single-tour.photos.js");
-    import("./single-tour.day-one.jss");
+    import("./single-tour.day-one.js");
    
   }
   
