@@ -45,5 +45,8 @@
   .single-tour-day-one__gallery-item,
   .single-tour-day-one__item {
     padding-bottom: 30px;
+    height: auto;
+    aspect-ratio: 2 / 1.8;
+    object-fit: cover;
   }
 }
