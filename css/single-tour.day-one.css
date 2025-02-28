@@ -7,9 +7,8 @@
   margin: 0 auto;
 
   .single-tour-day-one__header {
-    width: 100%;
-    text-align: center;
-    padding: 20px 0;
+    font-size: clamp(2.125rem, 2vw, 2.5rem);
+    padding-bottom: 50px;
   }
 
   .single-tour-day-one__container {
@@ -37,7 +36,8 @@
 
   .single-tour-day-one__description,
   .single-tour-day-one__info,
-  .single-tour-day-one__gallery-info {
+  .single-tour-day-one__gallery-info,
+  .single-tour-day-one__gallery-more-information {
     font-size: 17px;
     line-height: 1.6;
   }
