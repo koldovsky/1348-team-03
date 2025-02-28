@@ -38,25 +38,15 @@ const slides = [
   },
 ];
 
+const prevButton = document.querySelector(".popular-tours__arrow--prev");
+const nextButton = document.querySelector(".popular-tours__arrow--next");
 let currentSlideIdx = 0;
-renderCarousel(slides);
-let prevButton = document.querySelector(".popular-tours__arrow--prev");
-let nextButton = document.querySelector(".popular-tours__arrow--next");
 
 function renderCarousel(slides) {
-  const carouselContainer = document.querySelector(".popular-tours__carousel");
+  const carouselContainer = document.querySelector(".popular-tours__card");
   const currentSlide = slides[currentSlideIdx];
+
   carouselContainer.innerHTML = `<div class="popular-tours__card">
-      <button class="popular-tours__arrow popular-tours__arrow--prev">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="6.586 3.293 10.121 17.414"
-        >
-          <path
-            d="M15.293 3.293 6.586 12l8.707 8.707 1.414-1.414L9.414 12l7.293-7.293-1.414-1.414z"
-          />
-        </svg>
-      </button>
       <div class="popular-tours__card-image">
         <img src="${currentSlide.img_src}" alt="${currentSlide.img_alt}" />
       </div>
@@ -76,38 +66,20 @@ function renderCarousel(slides) {
         <a href="/single-tour.html" class="popular-tours__card-button"
           >Learn More</a
         >
-      </div>
-      <button class="popular-tours__arrow popular-tours__arrow--next">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="7.293 3.293 10.121 17.414"
-        >
-          <path
-            d="M7.293 4.707 14.586 12l-7.293 7.293 1.414 1.414L17.414 12 8.707 3.293 7.293 4.707z"
-          />
-        </svg>
-      </button>`;
+      </div>`;
 }
 
 function nextSlide() {
   currentSlideIdx = (currentSlideIdx + 1) % slides.length;
   renderCarousel(slides);
-  prevButton = document.querySelector(".popular-tours__arrow--prev");
-  nextButton = document.querySelector(".popular-tours__arrow--next");
-  nextButton.addEventListener("click", nextSlide);
-  prevButton.addEventListener("click", prevSlide);
 }
 
 function prevSlide() {
   currentSlideIdx = (currentSlideIdx - 1 + slides.length) % slides.length;
   renderCarousel(slides);
-  prevButton = document.querySelector(".popular-tours__arrow--prev");
-  nextButton = document.querySelector(".popular-tours__arrow--next");
-  nextButton.addEventListener("click", nextSlide);
-  prevButton.addEventListener("click", prevSlide);
 }
 
-//renderCarousel(slides);
+renderCarousel(slides);
 
 nextButton.addEventListener("click", nextSlide);
 prevButton.addEventListener("click", prevSlide);
