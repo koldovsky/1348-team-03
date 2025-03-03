@@ -94,12 +94,6 @@
     box-sizing: border-box;
 }
 
-.company-info__advantage-text {
-    font-family: "Titillium Web";
-    font-size: 26px;
-    font-weight: 700;
-}
-
 .company-info__footer {
     display: flex;
     justify-content: center;
