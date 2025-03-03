@@ -121,6 +121,9 @@
     .animals-carousel__btn-next,
     .animals-carousel__btn-prev {
       background-color: var(--color-secondary-dark);
+      border: none;
+      background: none;
+      outline: none;
     }
   }
 }
