@@ -1,4 +1,11 @@
 function startCountdown(targetDate) {
+  const countdownElement = document.querySelector(".overlay__countdown"); // Отримуємо елемент з HTML
+
+  if (!countdownElement) {
+    console.error("Елемент .overlay__countdown не знайдено!");
+    return;
+  }
+
   function updateCountdown() {
     const now = new Date().getTime();
     const timeLeft = targetDate - now;
