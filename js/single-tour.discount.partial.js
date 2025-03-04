@@ -15,12 +15,12 @@ function startCountdown(targetDate) {
       return;
     }
 
-    const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
-    const hours = Math.floor(
-      (timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-    );
-    const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
-    const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+    const days = Math.floor(timeLeft / (3600 * 24));
+    const hours = Math.floor((timeLeft % (3600 * 24)) / 3600);
+    const minutes = Math.floor((timeLeft % 3600) / 60);
+    const seconds = timeLeft % 60;
+
+    const formattedSeconds = seconds < 10 ? `0${seconds}` : seconds;
 
     countdownElement.textContent = `Offer ends in: ${days}d ${hours}h ${minutes}m ${seconds}s`;
   }
