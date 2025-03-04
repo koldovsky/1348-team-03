@@ -15,11 +15,11 @@
   .overlay__countdown {
     font-size: 25px;
     font-family: Permanent Marker, sans-serif;
+  }
 
-    .overlay__countdown-number {
-      text-decoration: underline;
-      font-weight: bold;
-    }
+  .overlay__countdown-number {
+    text-decoration: underline;
+    font-weight: bold;
   }
 
   .overlay__early-bird {
