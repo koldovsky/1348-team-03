@@ -15,10 +15,10 @@ function startCountdown(targetDate) {
       return;
     }
 
-    const days = Math.floor(timeLeft / (3600 * 24));
-    const hours = Math.floor((timeLeft % (3600 * 24)) / 3600);
-    const minutes = Math.floor((timeLeft % 3600) / 60);
-    const seconds = timeLeft % 60;
+    const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24)); // Кількість днів
+    const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)); // Години
+    const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60)); // Хвилини
+    const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
 
     const formattedSeconds = seconds < 10 ? `0${seconds}` : seconds;
 
@@ -29,5 +29,5 @@ function startCountdown(targetDate) {
   setInterval(updateCountdown, 1000);
 }
 
-const offerEndDate = new Date("2025-08-31T23:59:59").getTime();
+const offerEndDate = new Date(2025, 7, 31, 23, 59, 59).getTime();
 startCountdown(offerEndDate);
