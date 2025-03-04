@@ -25,13 +25,6 @@ function startCountdown(targetDate) {
     countdownElement.textContent = `Offer ends in: ${days}d ${hours}h ${minutes}m ${seconds}s`;
   }
 
-  countdownElement.innerHTML = `
-      <span class="overlay__countdown-number">${days}</span>d 
-      <span class="overlay__countdown-number">${hours}</span>h 
-      <span class="overlay__countdown-number">${minutes}</span>m 
-      <span class="overlay__countdown-number">${formattedSeconds}</span>s
-  `;
-
   updateCountdown();
   setInterval(updateCountdown, 1000);
 }
