@@ -1,4 +1,11 @@
 function startCountdown(targetDate) {
+  const countdownElement = document.querySelector(".overlay__countdown"); // Отримуємо елемент з HTML
+
+  if (!countdownElement) {
+    console.error("Елемент .overlay__countdown не знайдено!");
+    return;
+  }
+
   function updateCountdown() {
     const now = new Date().getTime();
     const timeLeft = targetDate - now;
@@ -22,5 +29,5 @@ function startCountdown(targetDate) {
   setInterval(updateCountdown, 1000);
 }
 
-const offerEndDate = new Date("2025-08-31T23:59:59").getTime();
+const offerEndDate = new Date(2025, 7, 31, 23, 59, 59).getTime();
 startCountdown(offerEndDate);
