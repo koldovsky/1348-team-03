@@ -1,3 +1,4 @@
+
 .animals {
   padding: 20px;
   min-height: 100vh; 
@@ -156,13 +157,14 @@
       gap: 24px;
       min-width: 1200px;
       margin: 0 auto;
-      padding: 15px;
+      height: 300px;
 
       .animals__item {
         display: flex;
         background-color: var(--base-color);
         min-width: 570px;
-
+        height: 300px;
+        
         .animals__image {
           flex: 1;
 
