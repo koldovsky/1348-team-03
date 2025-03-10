@@ -27,6 +27,7 @@
     width: 55%; /* Жорстко задаємо ширину */
     max-width: 600px; /* Додаткове обмеження */
     flex-shrink: 0; /* Забороняє зменшення */
+    color: var(--subtitle-color);
 }
 
 /* === Заголовок дня === */
@@ -34,6 +35,7 @@
     font-size: 2rem;
     font-weight: bold;
     color: var(--base-color);
+    margin-bottom: 20px;
 }
 
 /* === Виділення "DAY 2" жовтим кольором === */
@@ -66,6 +68,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    transition: color var(--transition-speed);
 }
 
 .day-two-accordion__button::after {
