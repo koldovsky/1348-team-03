@@ -24,7 +24,7 @@
 .day-two-travel__description {
     font-size: 1rem;
     line-height: 1.5;
-    width: 55%; /* Жорстко задаємо ширину */
+    width: 100%; /* Жорстко задаємо ширину */
     max-width: 600px; /* Додаткове обмеження */
     flex-shrink: 0; /* Забороняє зменшення */
     color: var(--subtitle-color);
@@ -39,6 +39,7 @@
 
 .day-two-travel__description p {
     margin-bottom: 15px; /* Відступ між абзацами */
+    text-align: left;
 }
 
 .day-two-travel__description p:last-child {
@@ -63,7 +64,8 @@
 
 /* === Аккордеонний блок === */
 .day-two-accordion {
-    width: 60%; /* Жорстко задаємо ширину */
+    width: 100%; /* Жорстко задаємо ширину */
+    max-width: 600px;
     max-width: none; /* Додаткове обмеження */
     flex-shrink: 0; /* Забороняє зменшення */
     flex: 1.5;
