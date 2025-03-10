@@ -1,4 +1,3 @@
-/* === Використання глобальних змінних з global.css === */
 :root {
     --primary-color: rgb(247, 199, 2);
     --base-color: rgb(255, 255, 255);
@@ -18,13 +17,15 @@
     color: var(--base-color);
     max-width: 1200px; /* Обмеження загальної ширини */
     margin: 0 auto; /* Центрування */
+    gap: 20px; /* Відступ між блоками */
 }
 
 /* === Блок опису === */
 .day-two-travel__description {
     font-size: 1rem;
     line-height: 1.5;
-    max-width: 600px; /* Обмежуємо ширину тексту */
+    max-width: 50%; /* Обмежуємо ширину тексту */
+    flex-grow: 1;
 }
 
 /* === Заголовок дня === */
@@ -41,9 +42,9 @@
 
 /* === Аккордеонний блок === */
 .day-two-accordion {
-    margin-left: auto;
     max-width: 45%; /* Обмежуємо ширину акордеону */
     width: 100%;
+    flex-grow: 1;
 }
 
 .day-two-accordion__item {
