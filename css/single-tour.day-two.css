@@ -126,7 +126,7 @@
     color: var(--base-color);
 }
 
+/* === Показ контенту при відкритті === */
 .day-two-accordion__item.active .day-two-accordion__content {
-    max-height: 150px; /* Або інше значення */
-    padding: 10px 15px;
+    display: block;
 }
