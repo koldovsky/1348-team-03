@@ -11,13 +11,10 @@
 /* === Стилі для головного блоку === */
 .day-two-travel {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    color: var(--base-color);
-    max-width: 1200px; /* Обмеження загальної ширини */
-    margin: 0 auto; /* Центрування */
-    gap: 50px; /* Відступ між блоками */
-    padding: 60px;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 /* === Блок опису === */
