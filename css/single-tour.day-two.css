@@ -36,6 +36,14 @@
     color: var(--subtitle-color) !important;
 }
 
+.day-two-travel__description p {
+    margin-bottom: 15px; /* Відступ між абзацами */
+}
+
+.day-two-travel__description p:last-child {
+    margin-bottom: 0;
+}
+
 /* === Заголовок дня === */
 .day-two-travel__title {
     font-size: 2.5rem;
