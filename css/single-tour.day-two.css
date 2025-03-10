@@ -118,9 +118,6 @@
 /* === Контент акордеону (прихований за замовчуванням) === */
 .day-two-accordion__content {
     display: none;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease-out, padding 0.3s ease-out;
     padding: 10px 15px;
     font-size: 1rem;
     color: var(--base-color);
