@@ -47,10 +47,10 @@
 
 /* === Аккордеонний блок === */
 .day-two-accordion {
-    width: 40%; /* Жорстко задаємо ширину */
-    max-width: 600px; /* Додаткове обмеження */
+    width: 50%; /* Жорстко задаємо ширину */
+    max-width: none; /* Додаткове обмеження */
     flex-shrink: 0; /* Забороняє зменшення */
-    flex: 1.2;
+    flex: 1.5;
     justify-content: flex-start;
     margin-top: 60px;
 }
