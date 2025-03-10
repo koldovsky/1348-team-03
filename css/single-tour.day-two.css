@@ -27,7 +27,7 @@
     width: 55%; /* Жорстко задаємо ширину */
     max-width: 600px; /* Додаткове обмеження */
     flex-shrink: 0; /* Забороняє зменшення */
-    color: var(--subtitle-color);
+    color: var(--subtitle-color) !important;
     justify-content: flex-start;
 }
 
