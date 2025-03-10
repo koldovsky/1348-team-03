@@ -28,6 +28,7 @@
     max-width: 600px; /* Додаткове обмеження */
     flex-shrink: 0; /* Забороняє зменшення */
     color: var(--subtitle-color);
+    justify-content: flex-start;
 }
 
 /* === Заголовок дня === */
@@ -50,6 +51,7 @@
     max-width: 600px; /* Додаткове обмеження */
     flex-shrink: 0; /* Забороняє зменшення */
     flex: 1.2;
+    justify-content: flex-start;
 }
 
 .day-two-accordion__item {
