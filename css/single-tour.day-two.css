@@ -36,6 +36,7 @@
     font-weight: bold;
     color: var(--base-color);
     margin-bottom: 20px;
+    white-space: nowrap;
 }
 
 /* === Виділення "DAY 2" жовтим кольором === */
@@ -46,8 +47,9 @@
 /* === Аккордеонний блок === */
 .day-two-accordion {
     width: 40%; /* Жорстко задаємо ширину */
-    max-width: 500px; /* Додаткове обмеження */
+    max-width: 600px; /* Додаткове обмеження */
     flex-shrink: 0; /* Забороняє зменшення */
+    flex: 1.2;
 }
 
 .day-two-accordion__item {
@@ -60,7 +62,7 @@
     background: none;
     border: none;
     color: var(--base-color);
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     text-align: left;
     padding: 15px;
     cursor: pointer;
