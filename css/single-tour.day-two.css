@@ -60,7 +60,7 @@
 
 /* === Аккордеонний блок === */
 .day-two-accordion {
-    width: 50%; /* Жорстко задаємо ширину */
+    width: 60%; /* Жорстко задаємо ширину */
     max-width: none; /* Додаткове обмеження */
     flex-shrink: 0; /* Забороняє зменшення */
     flex: 1.5;
@@ -71,8 +71,8 @@
 .day-two-accordion__item {
     border-bottom: 2px solid var(--subtitle-color);
     background-color: var(--color-background-muted);
-    padding: 20px; /* Збільшує внутрішні відступи */
-    min-height: 80px; /* Мінімальна висота */
+    padding: 25px; /* Збільшує внутрішні відступи */
+    min-height: 100px; /* Робить блок вищим */
 }
 
 .day-two-accordion__button {
