@@ -1,8 +1,9 @@
 .safarigo {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   background-color: var(--color-secondary-dark);
   justify-content: center;
+  align-items: center;
 
   .safarigo__container {
     display: flex;
