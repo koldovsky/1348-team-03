@@ -33,10 +33,10 @@
     padding: 100px 30px;
 
     background: linear-gradient(
-        var(—linear-gradient-color),
-        var(—linear-gradient-color)
+        var(--linear-gradient-color),
+        var(--linear-gradient-color)
       ),
-      url(../img/our-fleet-background.svg);
+      url(../img/our-fleet/our-fleet-background.svg);
     background-color: var(--color-background-light);
     background-size: calc(320px * 3);
     background-position: 38% 117%;
