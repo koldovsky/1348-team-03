@@ -56,7 +56,7 @@
 }
 
 .day-two-accordion__item {
-    border-bottom: 1px solid var(--subtitle-color);
+    border-bottom: 2px solid var(--subtitle-color);
     background-color: var(--color-background-muted);
 }
 
@@ -67,7 +67,7 @@
     color: var(--base-color);
     font-size: 1.3rem;
     text-align: left;
-    padding: 15px;
+    padding: 20px;
     cursor: pointer;
     font-family: "Titillium Web", sans-serif;
     display: flex;
