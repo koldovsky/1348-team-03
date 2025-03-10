@@ -17,6 +17,13 @@
     margin: 0 auto;
 }
 
+.day-two-travel__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 50px;
+}
+
 /* === Блок опису === */
 .day-two-travel__description {
     font-size: 1rem;
