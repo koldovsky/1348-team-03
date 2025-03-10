@@ -14,11 +14,18 @@
   --subtitle-color: rgb(175, 175, 175);
   --color-accent: rgb(243, 42, 42);
   --color-background-main: rgb(0, 0, 0);
+  --color-background-light: #f3f3f2;
   --color-background-muted: rgb(34, 34, 34);
   --color-secondary-dark: #151515;
   --primary-color: rgb(247, 199, 2);
   --secondary-button-color: #e6b800;
   --base-color: rgb(255, 255, 255);
+  --linear-gradient-color: rgba(244, 244, 244, 0.6);
+  --title-color-dark: rgb(21, 21, 21);
+  --text-color-dark: rgb(76, 76, 76);
+  --text-color-dark-secondary: rgb(70, 69, 69);
+  --text-color-muted: rgb(107, 104, 104);
+
   font-family: "Titillium Web", sans-serif;
   --transition-speed: 0.3s;
   --spacing-xs:0,5rem;
