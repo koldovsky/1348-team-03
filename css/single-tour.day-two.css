@@ -24,7 +24,7 @@
 .day-two-travel__description {
     font-size: 1rem;
     line-height: 1.5;
-    width: 100%; /* Жорстко задаємо ширину */
+    width: 55%; /* Жорстко задаємо ширину */
     max-width: 600px; /* Додаткове обмеження */
     flex-shrink: 0; /* Забороняє зменшення */
     color: var(--subtitle-color);
@@ -54,8 +54,6 @@
     white-space: nowrap;
     margin-left: 0; /* Забираємо зайві відступи */
     text-align: left;
-    display: block;
-    width: 100%;
 }
 
 /* === Виділення "DAY 2" жовтим кольором === */
