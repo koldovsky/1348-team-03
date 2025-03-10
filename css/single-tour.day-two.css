@@ -11,17 +11,20 @@
 /* === Стилі для головного блоку === */
 .day-two-travel {
     display: flex;
-    flex-direction: column;
-    width: 100%;
+    justify-content: space-between; /* Рівномірно розподіляє контент */
+    align-items: flex-start;
+    color: var(--base-color);
     max-width: 1200px;
     margin: 0 auto;
+    gap: 50px;
+    padding: 60px;
 }
 
 /* === Блок опису === */
 .day-two-travel__description {
     font-size: 1rem;
     line-height: 1.5;
-    width: 55%; /* Жорстко задаємо ширину */
+    width: 50%; /* Жорстко задаємо ширину */
     max-width: 600px; /* Додаткове обмеження */
     flex-shrink: 0; /* Забороняє зменшення */
     color: var(--subtitle-color);
@@ -61,12 +64,12 @@
 
 /* === Аккордеонний блок === */
 .day-two-accordion {
-    width: 60%; /* Жорстко задаємо ширину */
+    width: 50%; /* Жорстко задаємо ширину */
     max-width: none; /* Додаткове обмеження */
     flex-shrink: 0; /* Забороняє зменшення */
     flex: 1.5;
     justify-content: flex-start;
-    margin-top: 100px;
+    margin-top: 0;
     text-align: left;
 }
 
