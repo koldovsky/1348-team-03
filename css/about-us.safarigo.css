@@ -8,6 +8,8 @@
     display: flex;
     flex-direction: column;
     padding: 60px 24px;
+    max-width: 1200px;
+    margin: 0 auto;
 
     @media (min-width: 768px) {
       flex-direction: row;
@@ -15,11 +17,21 @@
       gap: 162px;
     }
 
+    @media (min-width: 990px) {
+      padding: 60px 40px;
+    }
+
+    @media (min-width: 1280) {
+      padding: 60px 15px;
+    }
+
+
     .safarigo__content {
       .safarigo__title {
         font-size: 34px;
         font-weight: 400;
       }
+
       .safarigo__text {
         font-size: 17px;
       }
@@ -42,6 +54,7 @@
         letter-spacing: 2.4px;
         font-size: 12px;
       }
+
       .safarigo__link-container {
         margin-top: 20px;
 
@@ -59,6 +72,7 @@
     }
   }
 
+
   .safarigo__tour-countdown-container {
     margin-bottom: 40px;
 
@@ -68,6 +82,7 @@
       font-weight: 400;
       padding: 0 10px;
     }
+
     .safarigo__tour-countdown {
       display: flex;
       flex-direction: column;
@@ -79,6 +94,7 @@
         flex-direction: row;
         gap: 20px;
       }
+
       .safarigo__countdown-time {
         width: 150px;
         height: 170px;
