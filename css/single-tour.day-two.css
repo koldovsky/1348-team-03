@@ -16,13 +16,15 @@
     align-items: flex-start;
     padding: 40px;
     color: var(--base-color);
+    max-width: 1200px; /* Обмеження загальної ширини */
+    margin: 0 auto; /* Центрування */
 }
 
 /* === Блок опису === */
 .day-two-travel__description {
     font-size: 1rem;
     line-height: 1.5;
-    max-width: 55%;
+    max-width: 50%; /* Обмежуємо ширину тексту */
 }
 
 /* === Заголовок дня === */
@@ -40,7 +42,7 @@
 /* === Аккордеонний блок === */
 .day-two-accordion {
     margin-left: auto;
-    max-width: 40%;
+    max-width: 45%; /* Обмежуємо ширину акордеону */
     width: 100%;
 }
 
