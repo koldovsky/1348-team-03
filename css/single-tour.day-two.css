@@ -10,9 +10,19 @@
 }
 
 /* === Стилі для головного блоку === */
-.day-two-travel__type {
-    color: var(--base-color);
+.day-two-travel {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
     padding: 40px;
+    color: var(--base-color);
+}
+
+/* === Блок опису === */
+.day-two-travel__description {
+    font-size: 1rem;
+    line-height: 1.5;
+    max-width: 55%;
 }
 
 /* === Заголовок дня === */
@@ -27,16 +37,11 @@
     color: var(--primary-color);
 }
 
-/* === Опис подорожі === */
-.day-two-trip__description {
-    font-size: 1rem;
-    line-height: 1.5;
-    margin-bottom: 20px;
-}
-
 /* === Аккордеонний блок === */
 .day-two-accordion {
-    margin-top: 20px;
+    margin-left: auto;
+    max-width: 40%;
+    width: 100%;
 }
 
 .day-two-accordion__item {
@@ -54,13 +59,22 @@
     padding: 15px;
     cursor: pointer;
     font-family: "Titillium Web", sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.day-two-accordion__button::after {
+    content: "+";
+    font-size: 1.5rem;
+    color: var(--base-color);
 }
 
 .day-two-accordion__button:hover {
     color: var(--primary-color);
 }
 
-/* === Контент аккордеона (прихований за замовчуванням) === */
+/* === Контент акордеону (прихований за замовчуванням) === */
 .day-two-accordion__content {
     display: none;
     padding: 10px 15px;
