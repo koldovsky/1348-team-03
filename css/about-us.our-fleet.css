@@ -3,6 +3,8 @@
   flex-direction: column;
   align-items: stretch;
   height: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 
   @media (min-width: 768px) {
     flex-direction: row;
@@ -32,10 +34,8 @@
     flex: 1;
     padding: 100px 30px;
 
-    background: linear-gradient(
-        var(--linear-gradient-color),
-        var(--linear-gradient-color)
-      ),
+    background: linear-gradient(var(--linear-gradient-color),
+        var(--linear-gradient-color)),
       url(../img/our-fleet/our-fleet-background.svg);
     background-color: var(--color-background-light);
     background-size: calc(320px * 3);
