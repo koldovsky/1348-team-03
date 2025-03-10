@@ -29,6 +29,7 @@
     flex-shrink: 0; /* Забороняє зменшення */
     color: var(--subtitle-color);
     justify-content: flex-start;
+    text-align: left;
 }
 
 .day-two-travel__description,
@@ -51,6 +52,7 @@
     color: var(--base-color);
     margin-bottom: 20px;
     white-space: nowrap;
+    text-align: left;
 }
 
 /* === Виділення "DAY 2" жовтим кольором === */
@@ -66,12 +68,12 @@
     flex: 1.5;
     justify-content: flex-start;
     margin-top: 100px;
+    text-align: left;
 }
 
 .day-two-accordion__item {
     border-bottom: 2px solid var(--subtitle-color);
     background-color: var(--color-background-muted);
-    padding: 25px; /* Збільшує внутрішні відступи */
     min-height: 100px; /* Робить блок вищим */
 }
 
