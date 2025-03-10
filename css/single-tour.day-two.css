@@ -39,6 +39,7 @@
     color: var(--base-color);
     margin-bottom: 20px;
     white-space: normal;
+    flex-basis: 100%;
 }
 
 /* === Виділення "DAY 2" жовтим кольором === */
