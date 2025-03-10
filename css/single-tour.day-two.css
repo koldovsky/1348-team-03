@@ -11,27 +11,24 @@
 /* === Стилі для головного блоку === */
 .day-two-travel {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    flex-direction: column; /* Заголовок зверху */
+    align-items: center; /* Центрування по центру */
     padding: 40px;
     color: var(--base-color);
-    max-width: 1200px; /* Обмеження загальної ширини */
-    margin: 0 auto; /* Центрування */
-    gap: 20px; /* Відступ між блоками */
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 30px; /* Збільшений відступ між елементами */
 }
 
-/* === Блок опису === */
-.day-two-travel__description {
-    font-size: 1rem;
-    line-height: 1.5;
-    width: 55%; /* Жорстко задаємо ширину */
-    max-width: 600px; /* Додаткове обмеження */
-    flex-shrink: 0; /* Забороняє зменшення */
+/* === Блок заголовка === */
+.day-two-travel__header {
+    text-align: center;
+    width: 100%;
 }
 
 /* === Заголовок дня === */
 .day-two-travel__title {
-    font-size: 2rem;
+    font-size: 2.2rem;
     font-weight: bold;
     color: var(--base-color);
 }
@@ -41,47 +38,62 @@
     color: var(--primary-color);
 }
 
-/* === Аккордеонний блок === */
-.day-two-accordion {
-    width: 40%; /* Жорстко задаємо ширину */
-    max-width: 500px; /* Додаткове обмеження */
-    flex-shrink: 0; /* Забороняє зменшення */
+/* === Описовий текст === */
+.day-two-travel__description {
+    font-size: 1.1rem;
+    line-height: 1.8; /* Збільшений міжрядковий інтервал */
+    width: 60%;
+    max-width: 700px;
+    color: var(--subtitle-color); /* Колір тексту змінений */
+    text-align: justify;
 }
 
+/* === Контейнер для акордеону === */
+.day-two-accordion {
+    width: 60%; /* Більший акордеон */
+    max-width: 600px;
+}
+
+/* === Елементи акордеону === */
 .day-two-accordion__item {
     border-bottom: 1px solid var(--subtitle-color);
     background-color: var(--color-background-muted);
+    padding: 10px;
 }
 
+/* === Кнопка акордеону === */
 .day-two-accordion__button {
     width: 100%;
     background: none;
     border: none;
     color: var(--base-color);
-    font-size: 1.2rem;
+    font-size: 1.3rem; /* Збільшений шрифт */
     text-align: left;
-    padding: 15px;
+    padding: 20px;
     cursor: pointer;
     font-family: "Titillium Web", sans-serif;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    transition: background var(--transition-speed);
 }
 
+/* === Забороняємо зміну кольору при наведенні === */
+.day-two-accordion__button:hover {
+    color: var(--base-color);
+}
+
+/* === Іконка "+" для акордеону === */
 .day-two-accordion__button::after {
     content: "+";
     font-size: 1.5rem;
     color: var(--base-color);
 }
 
-.day-two-accordion__button:hover {
-    color: var(--primary-color);
-}
-
 /* === Контент акордеону (прихований за замовчуванням) === */
 .day-two-accordion__content {
     display: none;
-    padding: 10px 15px;
+    padding: 15px;
     font-size: 1rem;
     color: var(--base-color);
 }
