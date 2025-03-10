@@ -1,6 +1,7 @@
 function init() {
    
     import("./global.burger-menu.js");
+    import("./about-us.tour-countdown.js");
   }
   
   const totalPartials = document.querySelectorAll(
