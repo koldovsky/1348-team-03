@@ -18,6 +18,7 @@
     max-width: 1200px; /* Обмеження загальної ширини */
     margin: 0 auto; /* Центрування */
     gap: 20px; /* Відступ між блоками */
+    flex-wrap: wrap;
 }
 
 /* === Блок опису === */
@@ -37,7 +38,7 @@
     font-weight: bold;
     color: var(--base-color);
     margin-bottom: 20px;
-    white-space: nowrap;
+    white-space: normal;
 }
 
 /* === Виділення "DAY 2" жовтим кольором === */
