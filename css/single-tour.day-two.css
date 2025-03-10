@@ -76,6 +76,11 @@
     transition: color var(--transition-speed);
 }
 
+.day-two-accordion__number {
+    color: var(--primary-color); /* Жовтий колір */
+    font-weight: bold;
+}
+
 .day-two-accordion__button::after {
     content: "+";
     font-size: 1.5rem;
