@@ -17,7 +17,7 @@
     color: var(--base-color);
     max-width: 1200px; /* Обмеження загальної ширини */
     margin: 0 auto; /* Центрування */
-    gap: 20px; /* Відступ між блоками */
+    gap: 40px; /* Відступ між блоками */
 }
 
 /* === Блок опису === */
@@ -52,6 +52,7 @@
     flex-shrink: 0; /* Забороняє зменшення */
     flex: 1.2;
     justify-content: flex-start;
+    margin-top: 40px;
 }
 
 .day-two-accordion__item {
