@@ -1,5 +1,10 @@
 .adventure-planner {
     background-color: var(--primary-col);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+    text-align: center;
 }
 
 .plan-your-adventure__text {
@@ -9,3 +14,42 @@
 .adventure-planner__button {
     background-color: var(--color-accent);
 }
+
+@media (max-width: 768px) {
+    .plan-your-adventure__outer-container {
+      padding: 30px;
+    }
+  
+    .plan-your-adventure__title {
+      font-size: 28px;
+    }
+  
+    .plan-your-adventure__text {
+      font-size: 16px;
+    }
+  
+    .adventure-planner__button {
+      font-size: 16px;
+      padding: 12px 24px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .plan-your-adventure__outer-container {
+      padding: 20px;
+    }
+  
+    .plan-your-adventure__title {
+      font-size: 24px;
+    }
+  
+    .plan-your-adventure__text {
+      font-size: 14px;
+    }
+  
+    .adventure-planner__button {
+      font-size: 14px;
+      padding: 10px 20px;
+      width: 100%; 
+    }
+  }
