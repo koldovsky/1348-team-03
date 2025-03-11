@@ -1,0 +1,99 @@
+.our-fleet {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  height: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
+
+  .our-fleet__picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    min-height: 100%;
+
+    @media (min-width: 768px) {
+      width: 50%;
+      height: auto;
+    }
+
+    .our-fleet__img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 30% 0%;
+    }
+  }
+
+  .our-fleet__content {
+    flex: 1;
+    padding: 100px 30px;
+
+    background: linear-gradient(var(--linear-gradient-color),
+        var(--linear-gradient-color)),
+      url(../img/our-fleet/our-fleet-background.svg);
+    background-color: var(--color-background-light);
+    background-size: calc(320px * 3);
+    background-position: 38% 117%;
+
+    @media (min-width: 768px) {
+      max-width: 50%;
+      background-position: right top;
+      background-size: 200%;
+      flex: 1;
+    }
+
+    .our-fleet__title {
+      font-size: 34px;
+      font-weight: 400;
+      color: var(--title-color-dark);
+
+      @media (min-width: 768px) {
+        font-size: 37px;
+      }
+
+      @media (min-width: 991px) {
+        font-size: 40px;
+      }
+    }
+
+    .our-fleet__subtitle-text {
+      margin-top: 20px;
+      font-size: 19px;
+      font-weight: 600;
+      color: var(--text-color-dark);
+    }
+
+    .our-fleet__text {
+      margin-top: 20px;
+      font-size: 17px;
+      color: var(--text-color-muted);
+    }
+
+    .our-fleet__list {
+      list-style: none;
+      margin-top: 20px;
+      font-size: 17px;
+
+      .our-fleet__item {
+        margin-bottom: 16px;
+        color: var(--text-color-dark-secondary);
+        display: flex;
+        align-items: flex-start;
+
+        .our-fleet__icon {
+          width: 20px;
+          color: var(--color-accent);
+          margin-right: 10px;
+          flex-shrink: 0;
+          margin-top: 3px;
+        }
+      }
+    }
+  }
+}

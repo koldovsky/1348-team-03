@@ -1,5 +1,5 @@
 .safari-day-three {
-    padding: 50px 24px 60px;
+    padding: 50px 0 60px;
     margin: auto;
 }
 
@@ -36,7 +36,7 @@
 }
 
 .safari-day-three__icon {
-    color: rgb(243, 42, 42);
+    color: var(--color-accent);
     max-width: 20px;
     height: 20px;
 }

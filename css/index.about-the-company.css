@@ -1,28 +1,34 @@
+.index-company-info {
+    padding: 0 10px;
+    margin: 0;
+}
+
 .company-info__header-title-text {
-    text-align: center;
     font-family: "Permanent Marker";
-    font-size: 34px;
+    font-size: 30px;
     font-weight: 400;
+    text-align: center;
 }
 
 .company-info__description {
-    text-align: center;
     font-family: "Titillium Web";
-    font-size: 19px;
+    font-size: 16px;
     font-weight: 600;
     margin-top: 25px;
+    text-align: center;
 }
 
 .company-info__description-text {
     font-family: "Titillium Web";
-    font-size: 17px;
+    font-size: 14px;
     font-weight: 400;
 }
 
 .company-info__advantage-text {
     font-family: "Titillium Web";
-    font-size: 26px;
+    font-size: 20px;
     font-weight: 700;
+    display: block;
 }
 
 .company-info__advantage-icon-background {
@@ -38,47 +44,161 @@
 .company-info__image-wrapper {
     display: inline-block;
     width: 49%;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-.company-info__advantage-icon-wrapper {
-    display: inline-block;
-    width: 11%;
-}
-
-.company-info__advantage-description {
-    display: inline-block;
-    width: 88%;
-}
-
-.index-company-info {
-    padding-top: 100px;
-    padding-bottom: 100px;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding: 0 15px;
 }
 
 .company-info__content {
+    display: flex;
+    align-items: flex-start;
     margin-top: 50px;
 }
 
 .company-info__image {
     max-width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 
 .company-info__details {
     display: inline-block;
     width: 49%;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 0 15px;
 }
 
 .company-info__advantages {
     margin-top: 20px;
 }
 
-.company-info__footer {
-    margin-top: 55px;
+.company-info__advantages-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.company-info__advantage-item {
+    display: flex;
     align-items: center;
+    margin-bottom: 20px;
+}
+
+.company-info__advantage-icon-wrapper {
+    flex: 0 0 11%;
+    display: flex;
+    justify-content: center;
+}
+
+.company-info__advantage-description {
+    flex: 1;
+    text-align: left;
+    margin-left: 10px;
+    box-sizing: border-box;
+}
+
+.company-info__footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.company-info__footer-link {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(247, 199, 2);
+    padding: 10px 20px;
+    border: 2px solid rgb(247, 199, 2);
+    border-radius: 25px;
+}
+
+@media (max-width: 768px) {
+    .index-company-info {
+        padding: 0px;
+    }
+
+    .company-info__advantage-item {
+        flex-direction: row;
+    }
+
+    .company-info__advantage-icon-wrapper {
+        flex: 0 0 20%;
+    }
+
+    .company-info__advantage-description {
+        margin-left: 5px;
+    }
+
+    .company-info__advantage-text {
+        font-size: 20px;
+    }
+
+    .company-info__header-title-text {
+        font-size: 26px;
+    }
+
+    .company-info__description {
+        font-size: 14px;
+    }
+
+    .company-info__description-text {
+        font-size: 12px;
+    }
+
+    .company-info__advantage-text {
+        font-size: 18px;
+    }
+
+    .company-info__content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .company-info__image-wrapper {
+        width: 100%;
+        padding: 10px;
+        height: auto;
+    }
+
+    .company-info__image {
+        height: 200px;
+        width: 100%;
+    }
+
+    .company-info__details {
+        width: 100%;
+        padding: 0 10px;
+        margin-top: 15px;
+        text-align: left;
+    }
+
+    .company-info__advantages {
+        width: 100%;
+        padding: 0 15px;
+        margin-top: 15px;
+        text-align: left;
+    }
+
+    .company-info__advantage-icon-background {
+        width: 50px; 
+        height: 50px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .company-info__header-title-text {
+        font-size: 34px;
+    }
+
+    .company-info__description {
+        font-size: 19px;
+    }
+
+    .company-info__description-text {
+        font-size: 16px;
+    }
+
+    .company-info__advantage-text {
+        font-size: 16px;
+    }
 }

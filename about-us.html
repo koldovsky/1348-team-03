@@ -5,11 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>about us</title>
-    <link
-      rel="shortcut icon"
-      href="https://placekitten.com/96/139"
-      type="image/x-icon"
-    />
+    <link rel="icon" href="img/header/leo-golo.png" type="image/x-icon">
     <script
       src="https://unpkg.com/htmx.org@1.9.10"
       integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
@@ -31,12 +27,13 @@
       ></section>
     </header>
     <main>
-      <div class="container">
-      <section
+     
+       <section
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
         data-hx-get="about-us.safarigo.partial.html"
-      ></section>
+      ></section> 
+       <div class="container">
       <section
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
@@ -47,11 +44,13 @@
         data-hx-swap="outerHTML"
         data-hx-get="about-us.bonuses.partial.html"
       ></section>
+       </div>
       <section
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
         data-hx-get="about-us.our-fleet.partial.html"
       ></section>
+          <div class="container">
       <section
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
@@ -68,5 +67,6 @@
     <div class="container">
     <footer></footer>
   </div>
+  <script src="js/about-us.js"></script>
   </body>
 </html>
